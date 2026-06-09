@@ -1,0 +1,23 @@
+
+  <aside class="sidebar">
+    <ul class="menu">
+
+      <li><a [routerLink]="['/ajoutermarque']">Ajouter marque</a></li>
+      <li><a [routerLink]="['/consultemarque']">Consulter marque</a></li>
+      <li><a [routerLink]="['/ajouterproduit']">Ajouter produit</a></li>
+      <li><a [routerLink]="['/gerermarque']">Gerer marque</a></li>
+
+      <li><a href=""  (Click)="onLogout()" >Deconnexion</a></li>
+
+      <!-- Ajoutez d'autres liens pour chaque direction -->
+    </ul>
+  </aside>
+  <!-- 
+<div class="slideshow-container">
+    <div *ngFor="let image of images; let i = index" class="slide" [class.active]="i === currentIndex">
+        <img [src]="image" alt="Slide {{i + 1}}">
+    </div>
+</div>
+<div class="full-screen-image">
+    <img [src]="images[currentIndex]" class="slideshow-image">
+</div>s -->

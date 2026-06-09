@@ -1,0 +1,93 @@
+
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Ajustez la hauteur selon vos besoins */
+  }
+  
+  canvas {
+    width: 80%; /* Ajustez la largeur selon vos besoins */
+    height: 80%; /* Ajustez la hauteur selon vos besoins */
+    max-width: 800px; /* Taille maximale du graphique */
+    max-height: 600px; /* Taille maximale du graphique */
+  }
+  
+  /* Modifiez les couleurs des barres ici */
+  .chart-bar-colors {
+    background-color: rgba(255, 99, 132, 0.2); /* Couleur de fond */
+    border-color: rgba(255, 99, 132, 1); /* Couleur de la bordure */
+  }
+  .chart-container {
+    margin-left: 20px; // Vous pouvez ajuster cette valeur selon vos besoins
+  }
+
+  
+/* Style pour la barre latérale */
+.sidebar {
+  background-color: #e9e7e7;
+  padding: 10px;
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto; /* Ajout de défilement vertical si le contenu dépasse la hauteur de la barre latérale */
+}
+
+/* Style pour la liste de menu dans la barre latérale */
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  padding: 8px 0;
+}
+
+/* Style pour les boutons dans la barre latérale */
+.menu li a {
+  text-decoration: none;
+  color: #333333;
+  display: block;
+  border-radius: 5px; /* Arrondir les coins des boutons */
+  padding: 8px 12px; /* Ajuster le padding des boutons */
+}
+
+/* Au survol des boutons dans la barre latérale */
+.menu li a:hover {
+  background-color: #9cc6f3; /* Couleur de fond bleue */
+  color: white; /* Couleur du texte en blanc */
+}
+
+/* Style pour les boutons d'action */
+.buttons-container {
+  display: flex; /* Aligner les boutons sur la même ligne */
+}
+
+
+
+/* Style pour les boutons au survol */
+.buttons-container button:hover {
+  opacity: 0.8;
+}
+
+/* Style pour les icônes à l'intérieur des boutons */
+.buttons-container .fas {
+  margin-right: 3px; /* Ajouter un espacement entre l'icône et le texte */
+}
+
+/* Style pour les boutons d'action */
+.buttons-container button {
+  padding: 10px 20px; /* Remplissage des boutons */
+  margin-right: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white; /* Couleur du texte */
+}

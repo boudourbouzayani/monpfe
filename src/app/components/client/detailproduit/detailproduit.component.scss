@@ -1,0 +1,299 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000000; /* Couleur de fond du header */
+  }
+  
+  .logo-container img {
+    width: 100px; /* Ajustez la taille de votre logo */
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px; /* Espacement entre chaque élément de la barre de navigation */
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0; /* Supprimez l'espacement à droite du dernier élément */
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .auth-buttons {
+    display: flex;
+  }
+  
+  .login-button,
+  .signup-button {
+    background-color: #2c2929; /* Couleur des boutons de connexion et d'inscription */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .login-button:hover,
+  .signup-button:hover {
+    background-color: #121474; /* Couleur au survol des boutons */
+  }
+  
+ 
+  .image-container {
+    text-align: center; /* Centrer l'image horizontalement */
+    margin-top: 0px; /* Espacement entre le header, la barre de navigation et l'image */
+    margin-left: 0; /* Annuler toute marge à gauche */
+    margin-right: 900; /* Annuler toute marge à droite */
+    padding-left: 100; /* Annuler tout rembourrage à gauche */
+    padding-right: 1000; /* Annuler tout rembourrage à droite */
+  }
+  
+ 
+
+  .image-message {
+    position: absolute; /* Position absolue par rapport au conteneur parent */
+    top: 90%; /* Aligner le haut du message au milieu de l'image */
+    left: 20%; /* Aligner le côté gauche du message au milieu de l'image */
+    transform: translate(-50%, -50%); /* Déplacer le message de moitié de sa propre largeur et hauteur pour le centrer exactement sur l'image */
+    color: #c7d8e9; /* Couleur du texte */
+    font-size: 18px; /* Taille de police */
+    font-weight: bold; /* Gras */
+    text-align: center; /* Centrer le texte horizontalement */
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour améliorer la lisibilité du texte */
+    padding: 10px 20px; /* Espacement à l'intérieur du message */
+  }
+  //
+ 
+  button {
+    padding: 20px 50px;
+    font-size:1.2rem;
+    cursor: pointer;
+    border: 0px;
+    background: transparent;
+    position: relative;
+    transition: all .2s;
+    overflow: hidden;
+    color: #fff;
+    border-radius: 30px;
+    box-shadow: 0px -0px 0px 0px rgba(143, 64, 248, .5), 0px 0px 0px 0px rgba(39, 200, 255, .5);
+  }
+  button:hover::after {
+    transform: rotate(150deg);
+  }
+  
+  button:hover {
+    transform: translate(0,-6px);
+    box-shadow: 10px -10px 25px 0px rgba(143,64, 248, .25), -10px 10px 25px 0px rgba(39, 200,255, .25);
+  }
+
+.main-body {
+    padding: 15px;
+}
+.card {
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1rem;
+}
+
+.gutters-sm {
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+.gutters-sm>.col, .gutters-sm>[class*=col-] {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+.mb-3, .my-3 {
+    margin-bottom: 1rem!important;
+}
+
+.bg-gray-300 {
+    background-color: #e2e8f0;
+}
+.h-100 {
+    height: 100%!important;
+}
+.shadow-none {
+    box-shadow: none!important;
+}
+.btnpanier {
+    padding: 20px 50px;
+    font-size:1.2rem;
+    cursor: pointer;
+    border: 0px;
+    background: transparent;
+    position: relative;
+    transition: all .2s;
+    overflow: hidden;
+    color: #000 !important;
+    border: 1px solid black;
+    border-radius: 30px;
+    box-shadow: 0px -0px 0px 0px rgba(143, 64, 248, .5), 0px 0px 0px 0px rgba(39, 200, 255, .5);
+  }
+  footer {
+    background-color: #000;
+    color: #fff; /* Texte en blanc pour un meilleur contraste */
+    height: 300px; /* Augmentation de la hauteur du footer */
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* Centrage vertical du contenu */
+}
+
+
+
+.footer-menu,
+.footer-contact,
+.footer-help-support,
+.footer-payment {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-menu h3,
+.footer-contact h3,
+.footer-help-support h3,
+.footer-payment h3 {
+    margin-bottom: 10px;
+}
+
+.footer-menu ul,
+.footer-contact ul,
+.footer-help-support ul,
+.footer-payment ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-menu ul li,
+.footer-contact ul li,
+.footer-help-support ul li,
+.footer-payment ul li {
+    margin-bottom: 5px;
+}
+
+.footer-menu ul li a,
+.footer-contact ul li a,
+.footer-help-support ul li a,
+.footer-payment ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-menu ul li a:hover,
+.footer-contact ul li a:hover,
+.footer-help-support ul li a:hover,
+.footer-payment ul li a:hover {
+    color: #007bff; /* Couleur de lien bleu clair au survol */
+}
+
+  .action-container {
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+  }
+
+
+  
+  .action-item a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+.action-item a {
+  display: block;
+  padding: 15px 20px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.action-item a:hover {
+  background-color: #ff0000;
+}
+.action-item {
+  display: inline-block;
+  margin-right: -4px; /* Utilisez une valeur négative pour supprimer l'espace */
+}
+
+.action-item:last-child {
+  margin-right: 0; /* Supprimez la marge droite du dernier élément */
+}
+
+.action-item a {
+  display: block;
+  padding: 20px 30px; /* Augmentez la taille du padding pour rendre les boutons plus grands */
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.action-item a:hover {
+  background-color: #ff0000;
+}
+
+
+.galerie-container {
+  text-align: center;
+  margin-top: 40px; /* Ajoute une marge au-dessus de la galerie */
+}
+
+
+
+.galerie img {
+  width: 100%; /* Ajuste la largeur des images à 100% du conteneur */
+  height: auto; /* Permet à la hauteur des images de s'ajuster automatiquement */
+  border-radius: 10px; /* Ajoute une bordure arrondie aux images */
+}
+.galerie {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Définir une grille avec des colonnes de largeur minimale de 200px */
+  grid-gap: 10px; /* Espacement entre les images */
+}
+
+.galerie img {
+  width: 100%; /* Les images occupent toute la largeur de leur conteneur */
+  height: auto; /* Hauteur automatique pour maintenir les proportions de l'image */
+}
+
+
+.galerie img:hover {
+  transform: scale(1.1); /* Effet de zoom au survol */
+  cursor: pointer; /* Curseur de la souris en forme de main */
+}

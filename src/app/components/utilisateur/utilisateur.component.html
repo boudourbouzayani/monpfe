@@ -1,0 +1,73 @@
+
+
+<main class="main-content">
+  <div class="user-list">
+    <div class="user-list-header">
+      <h2 class="user-list-title"><i class="fas fa-list-ul"></i> Liste des utilisateurs</h2>
+      <button class="add-user-button" [routerLink]="['/ajouterutilisateur']"><i class="fas fa-user-plus"></i> Ajouter utilisateur</button>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nom</th>
+          <th>Prénom</th>
+          <th>Email</th>
+          <th>Téléphone</th>
+          <th>Adresse</th>
+          <th>Ville</th>
+          <th>Code Postal</th>
+          <th>Date de Naissance</th>
+          <th>Etat</th>
+          <th>Role</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let utilisateur of utilisateurs">
+          <td>{{ utilisateur.idutilisateur }}</td>
+          <td>{{ utilisateur.nom }}</td>
+          <td>{{ utilisateur.prenom }}</td>
+          <td>{{ utilisateur.email }}</td>
+          <td>{{ utilisateur.telephone }}</td>
+          <td>{{ utilisateur.adresse }}</td>
+          <td>{{ utilisateur.ville }}</td>
+          <td>{{ utilisateur.codepostal }}</td>
+          <td>{{ utilisateur.datenaissance }}</td>
+          <td>{{ utilisateur.idetatutilisateur.labeletatutilisateur}}</td>
+          <td>{{ utilisateur.idrole.label}}</td>
+          <td>
+            <div class="buttons-container">
+              <button class="action-button activate-button" (click)="onActiver(utilisateur.idutilisateur, utilisateur)">
+                <i class="fas fa-check-circle"></i> Activer
+              </button>
+              <button class="action-button deactivate-button" (click)="onDesactiver(utilisateur.idutilisateur, utilisateur)">
+                <i class="fas fa-times-circle"></i> Désactiver
+              </button>
+            </div>
+        </tr>
+      </tbody>
+    </table>
+    
+  </div>
+  <aside class="sidebar">
+    <ul class="menu">
+      <li><a [routerLink]="['/admin/utilisateur']">Utilisateurs</a></li>
+      <li><a [routerLink]="['/adminconc']">Concessionnaire</a></li>
+      <li><a [routerLink]="['/consulteradmin']">Admin</a></li>
+      <li><a [routerLink]="['/gerermarque']">Gerer marque</a></li>
+      <li><a [routerLink]="['/gererproduit']">Gerer produit</a></li>
+      <li><a [routerLink]="['/consulterrole']">Consulter Role</a></li>
+      <li><a [routerLink]="['/validermarque']">Valider Marque</a></li>
+      <li><a [routerLink]="['/validerdemande']">Valider Demande</a></li>
+      <li><a [routerLink]="['/consulterdemande']">Consulter Demande</a></li>
+
+      <li><a href="" (click)="onLogout()">Deconnexion</a></li>
+    </ul>
+  </aside>
+</main>
+<!-- Inclure les bibliothèques de polices d'icônes (Font Awesome) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- Votre CSS existant ici -->
+

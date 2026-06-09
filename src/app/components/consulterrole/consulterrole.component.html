@@ -1,0 +1,52 @@
+<aside class="sidebar">
+  <ul class="menu">
+    <li><a [routerLink]="['/admin/utilisateur']">Utilisateurs</a></li>
+    <li><a [routerLink]="['/adminconc']">Concessionnaire</a></li>
+    <li><a [routerLink]="['/consulteradmin']">Admin</a></li>
+    <li><a [routerLink]="['/gerermarque']">Gerer marque</a></li>
+    <li><a [routerLink]="['/gererproduit']">Gerer produit</a></li>
+    <li><a [routerLink]="['/consulterrole']">Consulter Role</a></li>
+    <li><a [routerLink]="['/validermarque']">Valider Marque</a></li>
+    <li><a [routerLink]="['/validerdemande']">Valider Demande</a></li>
+    <li><a [routerLink]="['/consulterdemande']">Consulter Demande</a></li>
+
+    <li><a href="" (click)="onLogout()">Deconnexion</a></li>
+  </ul>
+</aside>
+<main class="main-content">
+  <div class="user-list">
+    <div class="user-list-header">
+      <h2 class="user-list-title"><i class="fas fa-list-ul"></i> Liste des Roles</h2>
+      <button class="add-user-button" [routerLink]="['/ajouterrole']"><i class="fas fa-folder-plus"></i> Ajouter Role</button>
+    </div>
+    <table class="table">
+      <thead>
+        <!-- En-têtes de colonne du tableau -->
+        <tr>
+          <th>ID</th>
+          <th>labelrole</th>
+          <th>Action</th>
+        </tr>
+       
+      </thead>
+      <tbody>
+        <!-- Contenu du tableau -->
+        <tr *ngFor="let role of roles">
+          <td>{{role.idrole}}</td>
+          <td>{{role.label}}</td>
+          <td>
+            <!-- Boutons d'action -->
+            <div class="buttons-container">
+              <button class="action-button" [routerLink]="['/modifierrole',role.idrole]">
+                <i class="fas fa-edit"></i> Modifier
+              </button>
+              <button class="action-button" (click)="supprimerRole(role.idrole)">
+                <i class="fas fa-trash-alt"></i> Supprimer
+              </button>
+            </div>
+            
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">

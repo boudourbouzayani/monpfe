@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<body>
+
+  <div class="content-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <ul class="menu">
+        <li><a [routerLink]="['/admin/utilisateur']">Utilisateurs</a></li>
+        <li><a [routerLink]="['/adminconc']">Concessionnaire</a></li>
+        <li><a [routerLink]="['/consulteradmin']">Admin</a></li>
+        <li><a [routerLink]="['/gerermarque']">Gerer marque</a></li>
+        <li><a [routerLink]="['/gererproduit']">Gerer produit</a></li>
+        <li><a [routerLink]="['/consulterrole']">Consulter Role</a></li>
+        <li><a [routerLink]="['/validermarque']">Valider Marque</a></li>
+        <li><a [routerLink]="['/validerdemande']">Valider Demande</a></li>
+        <li><a [routerLink]="['/consulterdemande']">Consulter Demande</a></li>
+
+        <li><a href="" (click)="onLogout()">Deconnexion</a></li>
+      </ul>
+    </aside>
+
+    <!-- Table de validation des marques -->
+    <section class="table-section">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Nom</th>
+            <th>Logo</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let marque of marques">
+            <td class="nom-column">{{ marque.nommarque }}</td>
+            <td class="logo-column">
+              <a [routerLink]="['/validerproduit', marque.idmarque]">
+                <img [src]="marque.logomarque" alt="{{ marque.nommarque }} logo">
+              </a>
+            </td>
+            <td class="action-column">
+              <button class="action-button valider" (click)="OnClickChangerEtat(marque.idmarque, 1)">
+                <i class="fas fa-check"></i> Valider
+              </button>
+              <button class="action-button refuser" (click)="OnClickChangerEtat(marque.idmarque, 0)">
+                <i class="fas fa-times"></i> Refuser
+              </button>
+              
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    </section>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<body>
+  <aside class="sidebar">
+    <ul class="menu">
+      <li><a [routerLink]="['/admin/utilisateur']">Utilisateurs</a></li>
+      <li><a [routerLink]="['/adminconc']">Concessionnaire</a></li>
+      <li><a [routerLink]="['/consulteradmin']">Admin</a></li>
+      <li><a [routerLink]="['/gerermarque']">Gerer marque</a></li>
+      <li><a [routerLink]="['/gererproduit']">Gerer produit</a></li>
+      <li><a [routerLink]="['/consulterrole']">Consulter Role</a></li>
+      <li><a [routerLink]="['/validermarque']">Valider Marque</a></li>
+      <li><a [routerLink]="['/validerdemande']">Valider Demande</a></li>
+      <li><a [routerLink]="['/consulterdemande']">Consulter Demande</a></li>
+
+      <li><a href="" (click)="onLogout()">Deconnexion</a></li>
+    </ul>
+
+  </aside>
+<section class="produit-section">
+  <div class="button-container">
+    <button class="action-button add-button" [routerLink]="['/ajouterproduit']">
+      <i class="fas fa-plus"></i> Ajouter Produit
+    </button>
+  </div>
+  <table class="produit-table">
+    <thead>
+      <tr>
+        <th class="nom">Nom</th>
+        <th class="logo">Logo</th>
+        <th class="actions">Actions</th> <!-- Déplacer la colonne "Actions" à droite -->
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let produit of produits">
+        <td class="nom">{{ produit.modele }}</td>
+        <td class="logo"><img [src]="produit.image" alt="{{ produit.modele }} logo"></td>
+        <td class="actions">
+          <button class="action-button modify-button" [routerLink]="['/modifierproduit', produit.idproduit]">
+              <i class="fas fa-edit"></i> Modifier
+          </button>
+          <button class="action-button delete-button" (click)="deleteProduit(produit.idproduit)">
+              <i class="fas fa-trash-alt"></i> Supprimer
+          </button>
+      </td>
+      
+      </tr>
+    </tbody>
+  </table>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</section>
+</body>
+</html>

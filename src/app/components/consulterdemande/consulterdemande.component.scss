@@ -1,0 +1,212 @@
+/* Style pour la barre latérale */
+.sidebar {
+    background-color: #e9e7e7;
+    padding: 10px;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+  }
+  
+  /* Style pour la liste de menu dans la barre latérale */
+  .menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    padding: 8px 0;
+  }
+  
+  /* Style pour les boutons dans la barre latérale */
+  .menu li a {
+    text-decoration: none;
+    color: #333333;
+    display: block;
+    border-radius: 5px; /* Arrondir les coins des boutons */
+    padding: 8px 12px; /* Ajuster le padding des boutons */
+  }
+  
+  /* Au survol des boutons dans la barre latérale */
+  .menu li a:hover {
+    background-color: #9cc6f3; /* Couleur de fond bleue */
+    color: white; /* Couleur du texte en blanc */
+  }
+
+/* Style pour la barre latérale */
+.sidebar {
+    background-color: #e9e7e7;
+    padding: 10px;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+  }
+  
+  .menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    padding: 8px 0;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: #333333;
+    display: block;
+    border-radius: 5px;
+    padding: 8px 12px;
+  }
+  
+  .menu li a:hover {
+    background-color: #9cc6f3;
+    color: white;
+  }
+  
+  /* Style pour le conteneur du tableau */
+  .content-container {
+    margin-left: 220px; /* Marge pour tenir compte de la barre latérale */
+    padding: 20px; /* Ajout de rembourrage */
+  }
+  
+  /* Style pour le titre du tableau */
+  .content-container h2 {
+    margin-bottom: 20px; /* Espacement en bas */
+  }
+  
+  
+  
+  /* Style pour les cellules du tableau */
+  .table td,
+  .table th {
+    padding: 8px; /* Réduction du padding */
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  /* Style pour les en-têtes de colonne du tableau */
+  .table th {
+    background-color: #f2f2f2;
+  }
+  
+  
+  
+  /* Style pour les boutons d'action */
+  .buttons-container {
+    display: flex; /* Alignement des boutons sur la même ligne */
+  }
+  
+  .buttons-container button {
+    padding: 8px 15px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff; /* Couleur de fond */
+    color: white;
+  }
+  
+  .buttons-container button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Style pour les icônes à l'intérieur des boutons */
+  .buttons-container button i {
+    margin-right: 5px;
+  }
+  /* Style pour la barre de séparation */
+  /* Style pour chaque ligne du tableau */
+  .table tr {
+    display: flex; /* Utilisation de flexbox pour aligner les cellules sur la même ligne */
+  }
+  
+  /* Style pour chaque cellule du tableau */
+  .table td, .table th {
+    flex: 1; /* Chaque cellule occupera une part égale de l'espace disponible */
+    padding: 8px; /* Ajout de padding */
+    text-align: center; /* Centrage du texte */
+  }
+
+  
+  .add-button:hover {
+    background-color: #4690f8; /* Couleur de fond au survol */
+  }
+  /* Style pour le conteneur du bouton */
+  .button-container {
+    text-align: right; /* Aligner le contenu à droite */
+    margin-bottom: 10px; /* Espacement en bas */
+  }
+  .content-container {
+    margin-left: 220px; /* Marge pour tenir compte de la barre latérale */
+    padding: 10px; /* Réduire le rembourrage */
+  }
+  
+  .table {
+    width: 120%; /* Réduire la largeur de la table */
+  }
+  .table th:first-child {
+    padding-left: 5px; /* Réduire le padding à gauche pour l'en-tête "ID" */
+  }
+  .table-container {
+    margin-left: 220px; /* Marge pour tenir compte de la barre latérale */
+    padding: 10px; /* Ajout de rembourrage */
+  }
+  
+  .table {
+    width: 100%; /* Réduire la largeur de la table pour qu'elle s'adapte à son conteneur */
+    margin: 0; /* Supprimer les marges par défaut de la table */
+  }
+  
+  .table th:first-child,
+  .table td:first-child {
+    padding-left: 5px; /* Réduire le padding à gauche pour la première colonne */
+  }
+  
+  .table th:last-child,
+  .table td:last-child {
+    padding-right: 5px; /* Réduire le padding à droite pour la dernière colonne */
+  }
+  /* Style pour le titre de la liste des utilisateurs */
+  .user-list-title {
+    text-align: left; /* Alignement du texte à gauche */
+    margin-bottom: 20px; /* Ajouter un espace en bas du titre */
+    margin-top: 20px; /* Ajouter un espace en haut du titre */
+    font-size: 1.1rem; /* Réduire légèrement la taille de la police */
+  }
+  
+  /* Style pour l'icône dans le titre de la liste des concessionnaires */
+  .user-list-title i.fa-list-ul {
+    color: #007bff; /* Couleur bleue pour l'icône */
+  }/* Style pour la section utilisateur */
+  .user-list {
+    margin-left: 220px; /* Ajout de la marge pour tenir compte de la largeur de la barre latérale */
+  }
+  
+  /* Style pour chaque cellule du tableau */
+  .user-list td {
+    padding: 1px; /* Réduire le padding */
+    font-size: 0.7rem; /* Réduire légèrement la taille de la police */
+  }
+  
+
+  
+  /* Style pour le bouton "Ajouter utilisateur" */
+  .add-user-button {
+    background-color: #6892f3;; /* Couleur de fond bleue */
+    color: white; /* Couleur du texte blanche */
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right; /* Pour aligner le bouton à droite */
+    margin-bottom: 10px; /* Pour ajouter un espace en bas du bouton */
+  }
+  

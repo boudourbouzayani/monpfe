@@ -1,0 +1,55 @@
+<div>
+    <h2>Ajouter un nouveau produit</h2>
+    <form #myForm="ngForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="nomproduit">Nom du produit :</label>
+        <input type="text" class="form-control" id="nomproduit" [(ngModel)]="nouveauProduit.nomproduit" name="nomproduit" required>
+      </div>
+      <div class="form-group">
+          <label for="descriptionProduit">Description :</label>
+          <textarea class="form-control" id="descriptionProduit" [(ngModel)]="nouveauProduit.description" name="descriptionProduit" required></textarea>
+      </div>
+      <div class="form-group">
+          <label for="prixProduit">Prix :</label>
+          <input type="number" class="form-control" id="prixProduit" [(ngModel)]="nouveauProduit.prixproduit" name="prixProduit" required>
+      </div>
+      <div class="form-group">
+          <label for="quantiteProduit">Quantité :</label>
+          <input type="number" class="form-control" id="quantiteProduit" [(ngModel)]="nouveauProduit.quantite" name="quantiteProduit" required>
+      </div>
+      <div class="form-group">
+          <label for="imageProduit">Image :</label>
+          <input type="text" class="form-control" id="imageProduit" [(ngModel)]="nouveauProduit.image" name="imageProduit">
+      </div>
+      <div class="form-group">
+          <label for="modeleProduit">Modèle :</label>
+          <input type="text" class="form-control" id="modeleProduit" [(ngModel)]="nouveauProduit.modele" name="modeleProduit">
+      </div>
+      <div class="form-group">
+          <label for="kilometrageProduit">Kilométrage :</label>
+          <input type="number" class="form-control" id="kilometrageProduit" [(ngModel)]="nouveauProduit.kilometrage" name="kilometrageProduit">
+      </div>
+      <div class="form-group">
+          <label for="disponibiliteProduit">Disponibilité :</label>
+          <input type="text" class="form-control" id="disponibiliteProduit" [(ngModel)]="nouveauProduit.disponibilite" name="disponibiliteProduit">
+      </div>
+      <div class="form-group">
+          <label for="carrosserieProduit">Carrosserie :</label>
+          <input type="text" class="form-control" id="carrosserieProduit" [(ngModel)]="nouveauProduit.carrosserie" name="carrosserieProduit">
+      </div>
+      <div class="form-group">
+          <label for="garantieProduit">Garantie :</label>
+          <input type="text" class="form-control" id="garantieProduit" [(ngModel)]="nouveauProduit.garantie" name="garantieProduit">
+      </div>
+      <div class="form-group">
+          <label for="nbPlacesProduit">Nombre de places :</label>
+          <input type="text" class="form-control" id="nbPlacesProduit" [(ngModel)]="nouveauProduit.nbplaces" name="nbPlacesProduit">
+      </div>
+      <div class="form-group">
+          <label for="nbPortesProduit">Nombre de portes :</label>
+          <input type="text" class="form-control" id="nbPortesProduit" [(ngModel)]="nouveauProduit.nbportes" name="nbPortesProduit">
+      </div>
+      <!-- Ajoutez d'autres champs pour les autres propriétés du produit -->
+      <button type="submit" class="btn btn-primary">Ajouter</button>
+  </form>
+</div>

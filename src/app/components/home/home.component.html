@@ -1,0 +1,27 @@
+<div *ngIf="utilisateurs.length > 0; else noUsers">
+    <table class="user-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nom</th>
+          <th>Prénom</th>
+          <th>Email</th>
+          <!-- Ajoutez d'autres colonnes au besoin -->
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let utilisateur of utilisateurs">
+          <td>{{ utilisateur.idutilisateur }}</td>
+          <td>{{ utilisateur.nom }}</td>
+          <td>{{ utilisateur.prenom }}</td>
+          <td>{{ utilisateur.email }}</td>
+          <!-- Ajoutez d'autres colonnes au besoin -->
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <ng-template #noUsers>
+    <p>Aucun utilisateur trouvé.</p>
+  </ng-template>
+  

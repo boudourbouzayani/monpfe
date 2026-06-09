@@ -1,0 +1,281 @@
+
+
+button {
+  padding: 20px 50px;
+  font-size: 1.2em;/* Définir une taille de police plus petite */
+  
+  padding: 5px 10px; /* Ajuster le rembourrage pour réduire la taille du bouton */
+  cursor: pointer;
+  border: 0px;
+  background: transparent;
+  position: relative;
+  transition: all .2s;
+  overflow: hidden;
+  color: #fff;
+  border-radius: 30px;
+  box-shadow: 0px -0px 0px 0px rgba(143, 64, 248, .5), 0px 0px 0px 0px rgba(39, 200, 255, .5);
+}
+button:hover::after {
+  transform: rotate(150deg);
+}
+
+button:hover {
+  transform: translate(0,-6px);
+  box-shadow: 10px -10px 25px 0px rgba(143,64, 248, .25), -10px 10px 25px 0px rgba(39, 200,255, .25);
+}
+
+
+/* marque-list.component.css */
+
+.marque-container {
+  display: flex; /* Afficher les marques côte à côte */
+  flex-wrap: wrap; /* Permettre le retour à la ligne des éléments si nécessaire */
+  justify-content: center; /* Espacement égal entre les marques horizontalement */
+  margin-top: 20px;
+  margin-left: 20px; /* Espace blanc à gauche */
+  margin-right: 20px; /* Espace blanc à droite */
+  align-items: center; /* Centrer verticalement les éléments enfants */
+  margin-top: 5px; /* Espacement entre les lignes de marques */
+}
+
+.marque-item {
+  text-align: center;
+  margin-bottom: 50px; /* Réduire l'espace entre les éléments */
+  margin-right: 10px;
+  flex: 0 1 calc(25% - 20px); /* Chaque marque prend 20% de la largeur disponible avec un espacement de 20px entre les éléments */
+}
+
+.marque-item img {
+  width: 50%; /* La largeur de l'image occupe 100% de l'espace disponible dans son parent */
+  height: auto; /* Ajustement automatique de la hauteur */
+}
+
+.marque-item p {
+  margin-top: 10px; /* Espacement entre l'image et le nom de la marque */
+  font-size: 16px; /* Taille de police pour le nom de la marque */
+  color: #333; /* Couleur du texte */
+}
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px; /* Largeur du sidebar */
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Ajoutez un fond semi-transparent pour le sidebar */
+  padding: 20px; /* Ajoutez un peu de marge intérieure */
+}
+
+
+
+.marque-item .marque-image {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.marque-item:hover .marque-image {
+  filter: grayscale(0%);
+}
+
+    
+
+/* Styles pour les boutons d'action */
+.action-button {
+  background-color: #817c7c; /* Couleur du bouton */
+  color: white; /* Couleur du texte */
+  border: none; /* Supprimer la bordure */
+  padding: 8px 16px; /* Ajouter de l'espace à l'intérieur du bouton */
+  cursor: pointer; /* Curseur pointeur au survol */
+  margin-right: 5px; /* Marge à droite */
+}
+
+/* Styles au survol des boutons d'action */
+.action-button:hover {
+  background-color: #211a2e; /* Couleur du bouton au survol */
+}
+
+/* Style pour le conteneur des boutons */
+.buttons-container {
+  display: flex; /* Utiliser flexbox */
+  justify-content: center; /* Centrer les éléments horizontalement */
+  align-items: center; /* Centrer les éléments verticalement */
+}
+/* Styles pour les images dans le tableau */
+table td img {
+  max-width: 70px; /* Définissez une largeur maximale pour l'image */
+  max-height: 100px; /* Définissez une hauteur maximale pour l'image */
+}
+
+
+  
+  .marque-container {
+    margin-left: 15%; /* Rétablir la marge à gauche */
+    width: calc(100% - 15%); /* Calculer la largeur du conteneur en soustrayant la largeur de la sidebar */
+  }
+  
+ 
+  
+  .header {
+    background-color: #a39393; /* Couleur de fond du header par défaut */
+    color: #fff; /* Couleur du texte par défaut */
+    padding: 20px 20px; /* Remplissage intérieur par défaut */
+    display: flex; /* Utiliser un affichage flex pour aligner les éléments */
+    justify-content: space-between; /* Aligner les éléments sur les côtés */
+    align-items: center; /* Centrer les éléments verticalement */
+    position: fixed; /* Position fixe pour rester en haut de la page */
+    width: 100%; /* Largeur de 100% pour couvrir toute la largeur de la fenêtre */
+    z-index: 1; /* Assurer que le header est au-dessus du contenu principal */
+  }
+  
+  .brand {
+    display: flex; /* Utiliser un affichage flex pour aligner les éléments du brand */
+    align-items: center; /* Centrer les éléments verticalement */
+  }
+  
+  .brand img {
+    width: 60px; /* Largeur du logo */
+    height: 60px; /* Hauteur du logo */
+    margin-right: 20px; /* Marge à droite pour séparer du texte */
+  }
+  
+  .navigation {
+    font-family: Arial, sans-serif; /* Définir la police de caractères */
+}
+
+
+
+.navigation li:last-child {
+    margin-right: 0; /* Supprimer la marge à droite du dernier élément */
+}
+
+.navigation a {
+    text-decoration: none; /* Supprimer la soulignement des liens */
+    color: #333; /* Définir la couleur du texte des liens */
+    transition: color 0.3s; /* Ajouter une transition sur la couleur du texte */
+}
+
+.navigation a:hover {
+    color: #007bff; /* Changer la couleur du texte au survol */
+}
+
+  .actions {
+    display: flex; /* Utiliser un affichage flex pour aligner les éléments des actions */
+    align-items: center; /* Centrer les éléments verticalement */
+  }
+  
+  .actions a {
+    text-decoration: none; /* Supprimer la décoration de texte par défaut */
+    color: #fff; /* Couleur du texte */
+    padding: 8px 16px; /* Ajouter de l'espace à l'intérieur du bouton */
+    margin-right: 10px; /* Marge à droite entre les éléments des actions */
+  }
+  
+  
+/* Style pour la barre latérale */
+.sidebar {
+  background-color: #e9e7e7;
+  padding: 10px;
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto; /* Ajout de défilement vertical si le contenu dépasse la hauteur de la barre latérale */
+}
+
+/* Ajoutez de la marge à droite pour séparer la barre latérale du contenu principal */
+.container {
+  margin-left: 220px; /* Ajustez la valeur selon vos besoins pour obtenir l'espace souhaité */
+}
+
+/* Réduisez la largeur du tableau pour tenir compte de l'espace entre la barre latérale et le contenu principal */
+table {
+  width: calc(100% - 240px); /* Calculez la largeur du tableau en soustrayant la largeur de la barre latérale et un espace supplémentaire */
+  border-collapse: collapse; /* Fusionner les bordures de cellules */
+}
+
+/* Ajoutez de la marge supérieure pour séparer le tableau de la barre latérale */
+table {
+  margin-top: 20px; /* Ajustez la valeur selon vos besoins */
+}
+
+
+/* Style pour la liste de menu dans la barre latérale */
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  padding: 8px 0;
+}
+
+/* Style pour les boutons dans la barre latérale */
+.menu li a {
+  text-decoration: none;
+  color: #333333;
+  display: block;
+  border-radius: 5px; /* Arrondir les coins des boutons */
+  padding: 8px 12px; /* Ajuster le padding des boutons */
+}
+
+/* Au survol des boutons dans la barre latérale */
+.menu li a:hover {
+  background-color: #9cc6f3; /* Couleur de fond bleue */
+  color: white; /* Couleur du texte en blanc */
+}
+
+/* Style pour les boutons d'action */
+.buttons-container {
+  display: flex; /* Aligner les boutons sur la même ligne */
+}
+
+.buttons-container button {
+  padding: 2px 2px;
+  margin-right: 3px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style pour les boutons au survol */
+.buttons-container button:hover {
+  opacity: 0.8;
+}
+
+table {
+  width: 100%; /* Réduisez la largeur du tableau pour qu'il s'adapte à la largeur du conteneur */
+  border-collapse: collapse; /* Fusionner les bordures de cellules */
+}
+
+/* Styles pour les en-têtes de colonnes */
+table th, table td {
+  padding: 8px; /* Réduisez l'espace à l'intérieur des cellules */
+  text-align: center; /* Alignez le texte au centre */
+  border-bottom: 1px solid #ddd; /* Bordure en bas de chaque ligne */
+  font-size: 14px; /* Réduisez la taille de la police */
+}
+
+/* Styles pour les boutons d'action */
+.action-button {
+  padding: 6px 12px; /* Réduisez l'espace à l'intérieur des boutons */
+  font-size: 14px; /* Réduisez la taille de la police */
+}
+
+/* Style pour le conteneur des boutons */
+.buttons-container {
+  margin-top: 10px; /* Ajoutez un peu d'espace au-dessus des boutons */
+}
+/* Style pour les images des logos */
+.marque-item img {
+  width: 50%; /* La largeur de l'image occupe 50% de l'espace disponible dans son parent */
+  height: auto; /* Ajustement automatique de la hauteur */
+  filter: grayscale(100%); /* Convertir l'image en noir et blanc par défaut */
+  transition: filter 0.3s ease; /* Ajouter une transition pour une animation fluide */
+}
+
+/* Styles au survol de l'image */
+.marque-item:hover img {
+  filter: none; /* Annuler le filtre de noir et blanc au survol */
+}
+

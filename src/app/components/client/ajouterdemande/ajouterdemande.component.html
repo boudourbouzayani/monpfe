@@ -1,0 +1,124 @@
+
+<header>
+  <div class="logo-container">
+    <a href="marketplace">
+      <img src="../../../assets/img/brand/logoo.jpg" alt="Logo de votre entreprise" style="width: 150px;">
+  </a>
+    </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votre Titre</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .social-icons {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .social-icons li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .social-icons li:last-child {
+            margin-right: 0;
+        }
+        .social-icons li a {
+            color: #333;
+            font-size: 20px;
+        }
+        /* Style pour le bouton du champ e-mail */
+        .btn-email {
+            background-color: #007bff;
+            border-color: #007bff;
+            color: #fff;
+        }
+        .btn-email:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+    </style>
+</head>
+  <nav> 
+
+    <ul>
+      <li><a [routerLink]="['/marketplace']">Marketplace</a></li>
+
+      <li><a [routerLink]="['/consultermarque']">Neuf</a></li>
+      <li><a [routerLink]="['/consulterproduit']">Produit</a></li>
+      <li><a [routerLink]="['/demandedevis']">Nous contacter</a></li>
+ 
+    </ul>
+  </nav>
+  <div class="auth-buttons">
+    <button  routerLink="/login">Connexion</button>
+    <button  routerLink="/register">inscription</button>
+  </div>
+</header>
+<div class="bg-light min-vh-100 d-flex flex-row align-items-center">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-7 col-md-9 col-xl-6">
+        <div class="card mx-4">
+          <div class="card-body p-4">
+            <form #myForm="ngForm" (ngSubmit)="ajouterDemande(myForm)">
+              <h1>Ajouter</h1>
+              <p class="text-medium-emphasis">Ajouter une demande</p>
+              <div class="form-group">
+                <label for="marque">Marque</label>
+                <input type="text" id="marque" class="form-control" [(ngModel)]="marque" name="marque" [value]="marque">
+              </div>
+              <div class="form-group">
+                <label for="produit">Produit</label>
+                <input type="text" id="produit" class="form-control" [(ngModel)]="produit" name="produit" [value]="produit">
+              </div>
+              <div class="form-group">
+                <label for="description">Description</label>
+                <textarea id="description" class="form-control" [(ngModel)]="description" name="description"[value]="description"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="apportpropre">Apport propre</label>
+                <input type="number" id="apportpropre" class="form-control" [(ngModel)]="apportpropre" name="apportpropre"[value]="apportpropre">
+              </div>
+              <div class="form-group">
+                <label for="loyer">Loyer</label>
+                <input type="number" id="loyer" class="form-control" [(ngModel)]="loyer" name="loyer"[value]="loyer">
+              </div>
+             
+              <div class="form-group">
+                <label for="prixproduit">Prix du produit</label>
+                <input type="text" id="prixproduit" class="form-control" [(ngModel)]="prixproduit" name="prixproduit" [value]="prixproduit">
+              </div>
+              <!-- Ajoutez d'autres champs de demande ici -->
+              <div class="form-separator"></div>
+
+              <div class="mb-3">
+                <label for="date" class="form-label">Date</label>
+                <input type="text" id="date" [(ngModel)]="date" name="date" class="form-control" placeholder="Date" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="montant" class="form-label">Montant</label>
+                <input type="text" id="montant" [(ngModel)]="montant" name="montant" class="form-control" placeholder="Montant" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" [(ngModel)]="email" name="email" class="form-control" placeholder="Adresse email" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="status" class="form-label">Status</label>
+                <input type="text" id="status" [(ngModel)]="status" name="status" class="form-control" placeholder="Status" required>
+              </div>
+
+              <div class="btn-ajouter">
+                <button type="submit" class="btn btn-success" style="background-color: black; color: white;" onmouseover="this.style.backgroundColor='red'" onmouseout="this.style.backgroundColor='black'">Ajouter</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,52 @@
+
+
+<!-- ajoutmarque.component.html -->
+<div class="full-screen-image">
+  
+    <aside class="sidebar">
+      <ul class="menu">
+        <li><a [routerLink]="['/ajoutmarque']">Ajouter Marque</a></li>
+        <li><a [routerLink]="['/consultemarque']">Consulter Marque</a></li>
+
+        <li><a href="" (Click)="onLogout()">Deconnexion</a></li>
+      </ul>
+    </aside>
+  </div>
+  
+<div class="bg-light min-vh-100 d-flex flex-row align-items-center">
+  <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-lg-7 col-md-9 col-xl-6">
+      
+              <div class="card mx-4">
+                  <div class="card-body p-4">
+                      <form #myForm="ngForm" (ngSubmit)="addMarque(myForm)">
+                          <h1>Ajouter</h1>
+                          <p class="text-medium-emphasis">Ajouter une marque</p>
+              
+                          <div class="mb-3">
+                              <label for="nommarque" class="form-label">Nom de la marque</label>
+                              <input type="text" id="nommarque" [(ngModel)]="nommarque" name="nommarque" class="form-control" placeholder="Nom de la marque" required>
+                          </div>
+              
+                          <div class="mb-3">
+                              <label for="logomarque" class="form-label">URL du logo</label>
+                              <input type="text" id="logomarque" [(ngModel)]="logomarque" name="logomarque" class="form-control" placeholder="URL du logo" required>
+                          </div>
+
+                          <!-- Champ etatmarque avec valeur par défaut -->
+                          <input type="hidden" id="etatmarque" [(ngModel)]="etatmarque" name="etatmarque" value="2">
+
+                          <!-- Vous pouvez ajouter d'autres champs ici si nécessaire -->
+
+                          <div class="btn-ajouter">
+                              <button type="submit" class="btn btn-success" style="background-color: rgb(189, 163, 163);">Ajouter</button>
+                          </div>
+                      </form>
+                  </div>
+              </div> 
+        
+          </div>
+      </div>
+  </div>
+</div>

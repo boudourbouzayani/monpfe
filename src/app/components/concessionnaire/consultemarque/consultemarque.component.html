@@ -1,0 +1,39 @@
+
+
+<aside class="sidebar">
+  <ul class="menu">
+
+    <li><a [routerLink]="['/consulterproduit']">Consulter produit</a></li>
+    <li><a [routerLink]="['/ajoutermarque']">Gerer marque</a></li>
+    <li><a [routerLink]="['/ajouterproduit']">Ajouter produit</a></li>
+    <li><a [routerLink]="['/consultermarque']">consulte marque</a></li>
+    <li><a [routerLink]="['/consultemarque']">consulte Etat marque</a></li>
+  </ul>
+</aside>
+    
+    <div class="container">
+      <table>
+        <thead>
+          <tr>
+            <th>Nom de la Marque</th>
+            <th>Logo</th>
+            <th>etat de validation </th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let marque of marques">
+              <td>{{ marque.nommarque }}</td>
+              <td>
+                <!-- Assurez-vous que la classe logo est toujours appliquée -->
+                <img [src]="marque.logomarque" alt="{{ marque.nommarque }} logo" class="logo">
+              </td>
+              <td>
+                <span *ngIf="marque.etatmarque === 1">Validée</span>
+                <span *ngIf="marque.etatmarque === 0">Refusée</span>
+                <span *ngIf="marque.etatmarque === 2">En attente de validation</span>
+              </td>
+            </tr>
+          </tbody>
+          
+      </table>
+    </div>

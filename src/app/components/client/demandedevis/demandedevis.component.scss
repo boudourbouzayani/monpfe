@@ -1,0 +1,238 @@
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000000; /* Couleur de fond du header */
+  }
+
+  
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px; /* Espacement entre chaque élément de la barre de navigation */
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0; /* Supprimez l'espacement à droite du dernier élément */
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .auth-buttons {
+    display: flex;
+  }
+  
+  .login-button,
+  .signup-button {
+    background-color: #2c2929; /* Couleur des boutons de connexion et d'inscription */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .login-button:hover,
+  .signup-button:hover {
+    background-color: #121474; /* Couleur au survol des boutons */
+  }
+  
+ 
+  .image-container {
+    text-align: center; /* Centrer l'image horizontalement */
+    margin-top: 0px; /* Espacement entre le header, la barre de navigation et l'image */
+    margin-left: 0; /* Annuler toute marge à gauche */
+    margin-right: 0; /* Annuler toute marge à droite */
+    padding-left: 0; /* Annuler tout rembourrage à gauche */
+    padding-right: 0; /* Annuler tout rembourrage à droite */
+  }
+  
+  .image-container img {
+    max-width: 100%; /* Assurez-vous que l'image ne dépasse pas la largeur du conteneur */
+    width: 100%; /* Ajustez la largeur de l'image pour qu'elle remplisse entièrement son conteneur */
+
+    display: block; /* Assurez-vous que l'image est affichée comme un bloc pour supprimer les espaces */
+    margin: 0 auto; /* Centrer l'image horizontalement en utilisant la marge automatique */
+  }
+  
+  .image-container {
+    position: relative; /* Assurez-vous que la position est relative pour que la position absolue de l'élément texte soit relative à ce conteneur */
+  }
+  
+  .image-message {
+    position: absolute; /* Position absolue par rapport au conteneur parent */
+    top: 90%; /* Aligner le haut du message au milieu de l'image */
+    left: 20%; /* Aligner le côté gauche du message au milieu de l'image */
+    transform: translate(-50%, -50%); /* Déplacer le message de moitié de sa propre largeur et hauteur pour le centrer exactement sur l'image */
+    color: #c7d8e9; /* Couleur du texte */
+    font-size: 18px; /* Taille de police */
+    font-weight: bold; /* Gras */
+    text-align: center; /* Centrer le texte horizontalement */
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour améliorer la lisibilité du texte */
+    padding: 10px 20px; /* Espacement à l'intérieur du message */
+  }
+  //
+  button {
+    padding: 20px 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: 0px;
+    background: transparent;
+    position: relative;
+    transition: all .2s;
+    overflow: hidden;
+    color: #fff;
+    border-radius: 30px;
+    box-shadow: 0px -0px 0px 0px rgba(143, 64, 248, .5), 0px 0px 0px 0px rgba(39, 200, 255, .5);
+  }
+  button {
+    padding: 20px 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: 0px;
+    background: transparent;
+    position: relative;
+    transition: all .2s;
+    overflow: hidden;
+    color: #fff;
+    border-radius: 30px;
+    box-shadow: 0px -0px 0px 0px rgba(143, 64, 248, .5), 0px 0px 0px 0px rgba(39, 200, 255, .5);
+  }
+  button:hover::after {
+    transform: rotate(150deg);
+  }
+  
+  button:hover {
+    transform: translate(0,-6px);
+    box-shadow: 10px -10px 25px 0px rgba(143,64, 248, .25), -10px 10px 25px 0px rgba(39, 200,255, .25);
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000000; /* Couleur de fond du header */
+  }
+  
+  .logo-container img {
+    width: 100px; /* Ajustez la taille de votre logo */
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px; /* Espacement entre chaque élément de la barre de navigation */
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0; /* Supprimez l'espacement à droite du dernier élément */
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .auth-buttons {
+    display: flex;
+  }
+  
+  .login-button,
+  .signup-button {
+    background-color: #2c2929; /* Couleur des boutons de connexion et d'inscription */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .login-button:hover,
+  .signup-button:hover {
+    background-color: #121474; /* Couleur au survol des boutons */
+  }
+  
+  
+  .image-container {
+    text-align: center; /* Centrer l'image horizontalement */
+    margin-top: 0px; /* Espacement entre le header, la barre de navigation et l'image */
+    margin-left: 0; /* Annuler toute marge à gauche */
+    margin-right: 0; /* Annuler toute marge à droite */
+    padding-left: 0; /* Annuler tout rembourrage à gauche */
+    padding-right: 0; /* Annuler tout rembourrage à droite */
+  }
+  
+  .image-container img {
+    max-width: 100%; /* Assurez-vous que l'image ne dépasse pas la largeur du conteneur */
+    width: 100%; /* Ajustez la largeur de l'image pour qu'elle remplisse entièrement son conteneur */
+    display: block; /* Assurez-vous que l'image est affichée comme un bloc pour supprimer les espaces */
+    margin: 0 auto; /* Centrer l'image horizontalement en utilisant la marge automatique */
+  }
+  
+  .image-container {
+    position: relative; /* Assurez-vous que la position est relative pour que la position absolue de l'élément texte soit relative à ce conteneur */
+  }
+  
+  .image-message {
+    position: absolute; /* Position absolue par rapport au conteneur parent */
+    top: 10%; /* Aligner le haut du message au milieu de l'image */
+    left: 20%; /* Aligner le côté gauche du message au milieu de l'image */
+    transform: translate(-50%, -50%); /* Déplacer le message de moitié de sa propre largeur et hauteur pour le centrer exactement sur l'image */
+    color: #c7d8e9; /* Couleur du texte */
+    font-size: 18px; /* Taille de police */
+    font-weight: bold; /* Gras */
+    text-align: center; /* Centrer le texte horizontalement */
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour améliorer la lisibilité du texte */
+    padding: 10px 20px; /* Espacement à l'intérieur du message */
+  }
+  //
+  
+  button {
+    padding: 20px 50px;
+    font-size: 1.2em;/* Définir une taille de police plus petite */
+    
+    padding: 5px 10px; /* Ajuster le rembourrage pour réduire la taille du bouton */
+    cursor: pointer;
+    border: 0px;
+    background: transparent;
+    position: relative;
+    transition: all .2s;
+    overflow: hidden;
+    color: #fff;
+    border-radius: 30px;
+    box-shadow: 0px -0px 0px 0px rgba(143, 64, 248, .5), 0px 0px 0px 0px rgba(39, 200, 255, .5);
+  }
+  button:hover::after {
+    transform: rotate(150deg);
+  }
+  
+  button:hover {
+    transform: translate(0,-6px);
+    box-shadow: 10px -10px 25px 0px rgba(143,64, 248, .25), -10px 10px 25px 0px rgba(39, 200,255, .25);
+  }
+  
+  .custom-text {
+    text-align: center; /* Centrer le texte */
+    font-size: 30px; /* Taille du texte */
+    font-weight: bold; /* Gras */
+    color: #333; /* Couleur du texte */
+  }
+  

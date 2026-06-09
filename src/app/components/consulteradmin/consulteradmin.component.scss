@@ -1,0 +1,183 @@
+/* Style pour la barre latérale */
+.sidebar {
+  background-color: #e9e7e7;
+  padding: 10px;
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+/* Style pour la liste de menu dans la barre latérale */
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  padding: 8px 0;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333333;
+  display: block;
+  border-radius: 5px;
+  padding: 8px 12px;
+}
+
+.menu li a:hover {
+  background-color: #9cc6f3;
+  color: white;
+}
+
+/* Style pour le conteneur du tableau */
+.table-container {
+  margin-left: 240px; /* Marge pour tenir compte de la barre latérale */
+  margin-top: 20px; /* Espacement du haut */
+}
+
+/* Style pour le tableau */
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Style pour chaque cellule du tableau */
+.table-container td,
+.table-container th {
+  padding: 8px; /* Réduction de la hauteur de la cellule */
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Style pour chaque en-tête de colonne du tableau */
+.table-container th {
+  background-color: #f2f2f2;
+}
+
+/* Style pour les boutons */
+.buttons-container button {
+  padding: 8px 15px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff; /* Couleur de fond */
+  color: white;
+}
+
+/* Style pour les boutons au survol */
+.buttons-container button:hover {
+  opacity: 0.8;
+}
+
+/* Style pour les icônes à l'intérieur des boutons */
+.buttons-container button i {
+  margin-right: 5px;
+}
+
+
+
+
+/* Style pour chaque cellule du tableau */
+.table-container td,
+.table-container th {
+  padding: 6px; /* Réduire la hauteur de la cellule */
+  font-size: 0.8rem; /* Réduire la taille de la police */
+  text-align: center;
+  line-height: 1; /* Réduire l'espacement entre les lignes */
+}
+
+/* Style pour chaque en-tête de colonne du tableau */
+.table-container th {
+  background-color: #f2f2f2;
+}
+
+/* Style pour les boutons d'action */
+.buttons-container {
+  display: flex; /* Aligner les boutons sur la même ligne */
+}
+
+/* Style pour les boutons */
+.buttons-container button {
+  padding: 8px 10px; /* Réduire légèrement le padding */
+  margin-right: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white; /* Couleur du texte */
+}
+
+/* Style pour les boutons au survol */
+.buttons-container button:hover {
+  opacity: 0.8;
+}
+
+
+
+
+/* Style pour les icônes à l'intérieur des boutons */
+.buttons-container .fas {
+  margin-right: 3px; /* Ajouter un espacement entre l'icône et le texte */
+}
+
+
+
+
+/* Style pour la liste des administrateurs */
+.admin-list-title {
+  font-size: 1rem; /* Réduire la taille de la police */
+  margin-bottom: 5px; /* Réduire l'espacement en bas */
+}
+
+/* Style pour l'icône dans le titre de la liste des administrateurs */
+.admin-list-title i {
+  margin-right: 5px;
+}
+/* Style pour les boutons */
+.buttons-container button {
+  padding: 5px 25px; /* Réduire le padding */
+  margin-right: 6px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white; /* Couleur du texte */
+  font-size: 0.6rem; /* Réduire la taille de la police */
+  background-color: #5d81f5; /* Nouvelle couleur de fond verte */
+}
+
+
+
+/* Style pour le titre de la liste des administrateurs */
+.admin-list-title {
+  font-size: 1rem; /* Réduire la taille de la police */
+  margin-bottom: 10px; /* Espacement en bas */
+  margin-top: 20px; /* Espacement en haut */
+}
+
+/* Style pour l'icône dans le titre de la liste des administrateurs */
+.admin-list-title i {
+  margin-right: 5px; /* Espacement entre l'icône et le texte */
+}
+
+/* Style pour le titre de la liste des utilisateurs */
+.user-list-title {
+  text-align: left; /* Alignement du texte à gauche */
+  margin-bottom: 20px; /* Ajouter un espace en bas du titre */
+  margin-top: 20px; /* Ajouter un espace en haut du titre */
+  font-size: 1.1rem; /* Réduire légèrement la taille de la police */
+}
+
+/* Style pour l'icône dans le titre de la liste des concessionnaires */
+.user-list-title i.fa-list-ul {
+  color: #007bff; /* Couleur bleue pour l'icône */
+}
+/* Style pour chaque en-tête de colonne du tableau */
+.user-list th {
+  padding: 6px; /* Conserver le padding pour les en-têtes */
+  font-size: 1rem; /* Conserver la taille de la police pour les en-têtes */
+}

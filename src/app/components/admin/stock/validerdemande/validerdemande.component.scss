@@ -1,0 +1,91 @@
+ 
+/* Style pour la barre latérale */
+.sidebar {
+    background-color: #e9e7e7;
+    padding: 10px;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto; /* Ajout de défilement vertical si le contenu dépasse la hauteur de la barre latérale */
+  }
+  
+  /* Style pour la liste de menu dans la barre latérale */
+  .menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    padding: 8px 0;
+  }
+  
+  /* Style pour les boutons dans la barre latérale */
+  .menu li a {
+    text-decoration: none;
+    color: #333333;
+    display: block;
+    border-radius: 5px; /* Arrondir les coins des boutons */
+    padding: 8px 12px; /* Ajuster le padding des boutons */
+  }
+  
+  /* Au survol des boutons dans la barre latérale */
+  .menu li a:hover {
+    background-color: #9cc6f3; /* Couleur de fond bleue */
+    color: white; /* Couleur du texte en blanc */
+  }
+  
+  /* Style pour la section du tableau */
+.container {
+    padding: 20px;
+    margin-left: 220px; /* Ajustement de la marge gauche pour éviter que le contenu ne se superpose à la barre latérale */
+  }
+  
+  /* Style pour le tableau */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Style pour les boutons d'action */
+  .action-button {
+    padding: 6px 10px; /* Réduire le padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color: #007bff; /* Couleur de fond */
+    font-size: 0.9rem; /* Réduire la taille de la police */
+  }
+  
+  /* Au survol des boutons d'action */
+  .action-button:hover {
+    background-color: #0056b3; /* Changement de couleur de fond au survol */
+  }
+  
+  /* Style pour les icônes à l'intérieur des boutons */
+  .action-button i {
+    margin-right: 3px; /* Ajouter un espacement entre l'icône et le texte */
+  }
+  
+  /* Style pour les boutons "Valider" */
+  .action-button.valider {
+    background-color: #4972f9; /* Couleur de fond pour le bouton "Valider" */
+  }
+  
+  /* Style pour les boutons "Refuser" */
+  .action-button.refuser {
+    background-color: #4972f9; /* Couleur de fond pour le bouton "Refuser" */
+  }

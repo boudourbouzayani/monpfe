@@ -1,0 +1,62 @@
+<!-- cet espace est pour modifier un utilisateur-->
+<div class="bg-light min-vh-100 d-flex flex-row align-items-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-7 col-md-9 col-xl-6">
+          <div class="card mx-4">
+            <div class="card-body p-4">
+              <form #myForm="ngForm" >
+                <h1>Modifier</h1>
+                <p class="text-medium-emphasis">Modifier un utilisateur</p>
+                <div class="mb-3">
+                  <label for="nom" class="form-label">Nom</label>
+                  <input id="nom" [(ngModel)]="nom" name="nom" class="form-control" placeholder="Nom" required>
+                </div>
+                <div class="mb-3">
+                  <label for="prenom" class="form-label">Prénom</label>
+                  <input id="prenom" [(ngModel)]="prenom" name="prenom" class="form-control" placeholder="Prénom" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input id="email" [(ngModel)]="email" name="email" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="mb-3">
+                  <label for="password" class="form-label">Mot de passe</label>
+                  <input id="password" [(ngModel)]="password" name="password" class="form-control" placeholder="Mot de passe" type="password" required>
+                </div>
+                <div class="mb-3">
+                  <label for="telephone" class="form-label">Téléphone</label>
+                  <input id="telephone" [(ngModel)]="telephone" name="telephone" class="form-control" placeholder="Téléphone" required>
+                </div>
+                <div class="mb-3">
+                  <label for="adresse" class="form-label">adresse</label>
+                  <input id="adresse" [(ngModel)]="adresse" name="adresse" class="form-control" placeholder="adresse" required>
+                </div>
+                <div class="mb-3">
+                  <label for="ville" class="form-label">ville</label>
+                  <input id="ville" [(ngModel)]="ville" name="ville" class="form-control" placeholder="ville" required>
+                </div>
+                <div class="mb-3">
+                  <label for="codepostal" class="form-label">codepostal</label>
+                  <input id="codepostal" [(ngModel)]="codepostal" name="codepostal" class="form-control" placeholder="codepostal" required>
+                </div>
+                <div class="mb-3">
+                  <label for="datedenaissance" class="form-label">datedenaissance</label>
+                  <input id="datedenaissance" [(ngModel)]="datenaissance" name="datedenaissance" class="form-control" placeholder="datedenaissance" required>
+                </div>
+                
+                <div class="btn-ajouter">
+                  
+                  <button type="submit" class="btn btn-success" style="background-color: brown;" (click)="updateUser(myForm)">Valider</button>
+              </div>
+                
+                  <br><br><br><br><br><br>
+              </form>
+            </div>
+          </div> 
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  

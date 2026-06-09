@@ -1,0 +1,47 @@
+/* Style général */
+div {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Style du formulaire */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre le contenu horizontalement */
+  }
+  
+  label {
+    margin-bottom: 5px;
+    color: #666;
+  }
+  
+  input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6600; /* Nouvelle couleur du bouton */
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #e65c00; /* Couleur au survol */
+  }
+  

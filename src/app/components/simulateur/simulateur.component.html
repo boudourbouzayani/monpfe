@@ -1,0 +1,84 @@
+<header>
+  <div class="logo-container">
+    <img src="../../../assets/img/brand/logoo.jpg" alt="Logo de votre entreprise" style="width: 150px;">
+  </div>
+  <nav> 
+    <ul>
+      <li><a [routerLink]="['/marketplace']">Accueil</a></li>
+      <li><a [routerLink]="['/consultermarque']">Marque</a></li>
+      <li><a href="#">Devenir Partenaire</a></li>
+      <li><a href="#">Catégories</a></li>
+      <li><a href="#">Actualités</a></li>
+    </ul>
+  </nav>
+  <div class="auth-buttons">
+    <button routerLink="/login">Connexion</button>
+    <button routerLink="/register">S'inscrire</button>
+  </div>
+</header>
+
+<div class="image-container">
+  <p class="image-message">Libérez votre potentiel de conduite avec des véhicules qui inspirent l'aventure et le plaisir au volant.</p>
+  <img src="https://news.automobile.tn/2024/04/volvo-xc60-2410_max_home.webp?t=1713440832" alt="Description de votre image">
+</div>
+<br>
+<div style="text-align: center;">
+
+  <div class="loan-details">
+    <h3 style="font-weight: bold;">simulation de prêt</h3> <!-- Modification du style d'écriture -->
+   
+
+    <div class="product-details">
+      <!-- Affichage des détails du produit -->
+      <img [src]="produit.image" alt="Image du produit">
+      <h3>{{ produit.nomproduit }}</h3>
+      <p *ngIf="produit && produit.modele">{{ produit.modele }}</p> <!-- Vérification de nullité pour 'modele' -->
+      <p>Prix : {{ produit.prixproduit }} DT</p>
+      <p>Loyer actuel : {{ produit.loyer.toFixed(2) }} DT</p>
+      <hr>
+    </div>
+
+    <div class="loan-details">
+      <h3 style="font-weight: bold;">Modifier le prêt</h3> <!-- Modification du style d'écriture -->
+      <div id="form-wrapper">
+        <form>
+          <h1 id="form-title" style="margin-bottom: 20px;">Choisir le nombre d'années</h1>
+          <div id="debt-amount-slider">
+		<div id="debt-amount-slider">
+			<input type="radio" [(ngModel)]="nombreAnnees" name="debt-amount" id="1" value="1" (input)="modifierLoyer()" required>
+			<label for="1" data-debt-amount="1"></label>
+			<input type="radio" [(ngModel)]="nombreAnnees" name="debt-amount" id="2" value="2" (input)="modifierLoyer()" required>
+			<label for="2" data-debt-amount="2"></label>
+			<input type="radio" [(ngModel)]="nombreAnnees" name="debt-amount" id="3" value="3" (input)="modifierLoyer()" required>
+			<label for="3" data-debt-amount="3"></label>
+      <input type="radio" [(ngModel)]="nombreAnnees" name="debt-amount" id="4" value="4" (input)="modifierLoyer()" required>
+			<label for="4" data-debt-amount="4"></label>
+			<input type="radio" [(ngModel)]="nombreAnnees" name="debt-amount" id="5" value="5" (input)="modifierLoyer()" required>
+			<label for="5" data-debt-amount="5"></label>
+			<input type="radio" [(ngModel)]="nombreAnnees" name="debt-amount" id="6" value="6" (input)="modifierLoyer()" required>
+			<label for="6" data-debt-amount="6"></label>
+      <input type="radio" [(ngModel)]="nombreAnnees" name="debt-amount" id="7" value="7" (input)="modifierLoyer()" required>
+			<label for="7" data-debt-amount="7"></label>
+		</div></div>
+  </form>
+  <br>
+</div>
+<label for="apportPropre" style="font-weight: bold;">Apport propre :</label> <!-- Modification du style d'écriture -->
+<input type="number" id="apportPropre" [(ngModel)]="apportPropre" style="margin-bottom: 10px;"> <!-- Ajout de marge en bas -->
+<button type="button" class="custom-button" style="margin-left: 10px;" (click)="modifierApportPropreEtLoyer()">Modifier</button>
+</div>
+</div>
+</div>
+<div class="d-flex justify-content-center">
+  <div class="text-center" style="margin-top: 20px;">
+    <a *ngIf="produit" [routerLink]="['/ajouterdemande']" [queryParams]="{ produit: produit.idproduit, loyerActuel: produit.loyer, apportPropre: apportPropre }">
+      <button class="custom-button blue-bg"> <!-- Ajoutez la classe "blue-bg" -->
+        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+        </svg>
+        Demande de financement
+      </button>
+    </a>
+  </div>
+</div>
+

@@ -1,0 +1,224 @@
+.produit-section {
+  margin-left: 220px;
+}
+.produit-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.produit-table th,
+.produit-table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+.produit-table th {
+  background-color: #f2f2f2;
+}
+.produit-table td.logo {
+  width: 100px;
+}
+.produit-table td.nom {
+  width: 200px;
+}
+.produit-table td.actions {
+  width: 120px;
+}
+.produit-actions button {
+  margin-right: 5px;
+}
+.produit-table td.logo img {
+  transition: filter 0.3s;
+  filter: grayscale(100%);
+}
+.produit-table td.logo img:hover {
+  filter: none;
+}
+.produit-table td.logo {
+  width: 60px; /* Réduire la largeur pour minimiser la taille des images */
+}
+.produit-table td.logo img {
+  max-width: 100%; /* Ajuster la taille maximale de l'image */
+  max-height: 50px; /* Ajuster la hauteur maximale de l'image */
+}
+.produit-table td.nom {
+  width: 200px;
+}
+.produit-table td.actions {
+  width: 200px; /* Ajuster la largeur pour permettre aux boutons de rester sur la même ligne */
+}
+.action-btn {
+  margin-right: 5px;
+}
+
+/* Style pour la barre latérale */
+.sidebar {
+  background-color: #e9e7e7;
+  padding: 10px;
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+/* Style pour la liste de menu dans la barre latérale */
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  padding: 8px 0;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333333;
+  display: block;
+  border-radius: 5px;
+  padding: 8px 12px;
+}
+
+.menu li a:hover {
+  background-color: #9cc6f3;
+  color: white;
+}
+
+/* Style pour le conteneur du tableau */
+.table-container {
+  margin-left: 240px; /* Marge pour tenir compte de la barre latérale */
+  margin-top: 20px; /* Espacement du haut */
+}
+
+/* Style pour le tableau */
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Style pour chaque cellule du tableau */
+.table-container td,
+.table-container th {
+  padding: 8px; /* Réduction de la hauteur de la cellule */
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Style pour chaque en-tête de colonne du tableau */
+.table-container th {
+  background-color: #f2f2f2;
+}
+
+/* Style pour chaque cellule du tableau */
+.table-container td,
+.table-container th {
+  padding: 6px; /* Réduire la hauteur de la cellule */
+  font-size: 0.8rem; /* Réduire la taille de la police */
+  text-align: center;
+  line-height: 1; /* Réduire l'espacement entre les lignes */
+}
+
+/* Style pour chaque en-tête de colonne du tableau */
+.table-container th {
+  background-color: #f2f2f2;
+}
+
+
+/* Style pour la liste des administrateurs */
+.admin-list-title {
+  font-size: 1rem; /* Réduire la taille de la police */
+  margin-bottom: 5px; /* Réduire l'espacement en bas */
+}
+
+
+
+/* Style pour les boutons */
+.action-button {
+  padding: 6px 2px; /* Réduire le remplissage des boutons */
+  margin-top: 8px; /* Réduire la marge supérieure */
+  margin-right: 8px; /* Ajouter une marge à droite */
+  border: none; /* Pas de bordure */
+  border-radius: 5px; /* Coins arrondis */
+  cursor: pointer; /* Curseur pointeur */
+}
+/* Style pour les icônes des boutons */
+.action-button i {
+  margin-right: 3px; /* Réduire la marge à droite des icônes */
+}
+
+
+/* Style spécifique pour le bouton Supprimer */
+.delete-button {
+  background-color: #4690f8; /* Couleur de fond pour le bouton Supprimer */
+  color: #fff; /* Couleur du texte */
+}
+
+/* Style spécifique pour le bouton Modifier */
+.modify-button {
+  background-color: #3e97f7; /* Couleur de fond pour le bouton Modifier */
+  color: #fff; /* Couleur du texte */
+}
+
+/* Ajoutez ces styles */
+.buttons-container {
+  display: flex;
+}
+
+.buttons-container button {
+  margin-right: 5px;
+}
+
+/* Supprimez ces styles, car ils ne sont plus nécessaires */
+.produit-table td.actions {
+  width: auto; /* Laissez la largeur se régler automatiquement */
+}
+
+/* Style pour les boutons */
+.action-button {
+  padding: 5px 10px; /* Réduire le rembourrage des boutons */
+  margin-top: 8px; /* Conserver la marge supérieure */
+  margin-right: 8px; /* Conserver la marge droite */
+  border: none; /* Pas de bordure */
+  border-radius: 5px; /* Coins arrondis */
+  cursor: pointer; /* Curseur pointeur */
+  font-size: 0.9rem; /* Réduire la taille de la police */
+}
+
+/* Supprimez cette ligne, car elle n'est plus nécessaire */
+.action-button i {
+  margin-right: 3px; /* Conserver la marge à droite des icônes */
+}
+
+.produit-table td.nom {
+  width: 40%; /* Largeur de la colonne "Nom" */
+}
+
+.produit-table td.logo {
+  width: 30%; /* Largeur de la colonne "Logo" */
+}
+
+.produit-table td.actions {
+  width: 30%; /* Largeur de la colonne "Actions" */
+}
+/* Style pour le bouton "Ajouter Produit" */
+.add-button {
+  padding: 8px 16px; /* Ajuster le remplissage */
+  margin-bottom: 10px; /* Espacement en bas */
+  background-color: #3e97f7; /* Couleur de fond */
+  color: #fff; /* Couleur du texte */
+  border: none; /* Pas de bordure */
+  border-radius: 5px; /* Coins arrondis */
+  cursor: pointer; /* Curseur pointeur */
+  font-size: 0.9rem; /* Taille de la police */
+}
+
+.add-button:hover {
+  background-color: #4690f8; /* Couleur de fond au survol */
+}
+/* Style pour le conteneur du bouton */
+.button-container {
+  text-align: right; /* Aligner le contenu à droite */
+  margin-bottom: 10px; /* Espacement en bas */
+}

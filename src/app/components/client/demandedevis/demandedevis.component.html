@@ -1,0 +1,152 @@
+<header>
+  <div class="logo-container">
+    <a href="/marketplace">
+      <img src="../../../assets/img/brand/logoo.jpg" alt="Logo de votre entreprise" style="width: 150px;">
+  </a>
+    </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votre Titre</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .social-icons {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .social-icons li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .social-icons li:last-child {
+            margin-right: 0;
+        }
+        .social-icons li a {
+            color: #333;
+            font-size: 20px;
+        }
+        /* Style pour le bouton du champ e-mail */
+        .btn-email {
+            background-color: #007bff;
+            border-color: #007bff;
+            color: #fff;
+        }
+        .btn-email:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+    </style>
+</head>
+  <nav> 
+
+    <ul>
+      <li><a [routerLink]="['/marketplace']">Marketplace</a></li>
+
+      <li><a [routerLink]="['/consultermarque']">Neuf</a></li>
+      <li><a [routerLink]="['/consulterproduit']">Produit</a></li>
+      <li><a [routerLink]="['/demandedevis']">Nous contacter</a></li>
+ 
+    </ul>
+  </nav>
+  <div class="auth-buttons">
+    <button  routerLink="/login">Connexion</button>
+    <button  routerLink="/register">inscription</button>
+  </div>
+</header>
+
+<div class="image-container">
+  <img class="actualite-image" src="https://www.ennakl.com/sites/default/files/2024-01/contact.jpg" alt="Description de votre image">
+</div>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-12">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link contact-link" [routerLink]="['/demandedevis']" style="color: black;">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+<div class="row justify-content-center">
+  <div class="col-lg-12">
+    <p class="custom-text">Nous vous remercions pour l'intérêt que vous portez à nos marques et vous invitons à remplir le formulaire suivant:</p>
+  </div>
+</div>
+
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-7 col-md-9 col-xl-6">
+        <div class="card mx-4">
+          <div class="card-body p-4">
+            <form #devisForm="ngForm" (ngSubmit)="ajouterDevis(devisForm)">
+              <h1>Ajouter un devis</h1>
+              <div class="form-group">
+                <label for="nomdev">Nom</label>
+                <input type="text" id="nomdev" class="form-control" name="nomdev" [(ngModel)]="nomdev" required>
+              </div>
+              <div class="form-group">
+                <label for="prenomdev">Prénom</label>
+                <input type="text" id="prenomdev" class="form-control" name="prenomdev" [(ngModel)]="prenomdev" required>
+              </div>
+              <div class="form-group">
+                <label for="telephonedev">Téléphone</label>
+                <input type="text" id="telephonedev" class="form-control" name="telephonedev" [(ngModel)]="telephonedev" required>
+              </div>
+              <div class="form-group">
+                <label for="villedev">Ville</label>
+                <input type="text" id="villedev" class="form-control" name="villedev" [(ngModel)]="villedev" required>
+              </div>
+              <div class="form-group">
+                <label for="produit">Produit</label>
+                <input type="text" id="produit" class="form-control" name="produit" [(ngModel)]="produit" required>
+              </div>
+              <button type="submit" class="btn btn-primary" style="background-color: #007bff; border-color: #007bff;">Ajouter</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-9 col-xl-6">
+        <p>Volkswagen et Volkswagen Utilitaires</p>
+        <p>Zone Industrielle charguia 2, 1080 Tunis </p>
+        <p>Tel : +216 55 603 597</p>
+        
+        <p>SEAT</p>
+        <p>Zone Industrielle charguia 2, Tunis CUN</p>
+        <p>Tel : +216 55 603 597</p>
+        
+        <p>Audi</p>
+        <p>Route régionale 23 Tunis, la goulette 2060</p>
+        <p>Tel : +216 55 603 597</p>
+        
+        <p>Porsche</p>
+        <p>Route régionale 23 Tunis, la goulette 2060</p>
+        <p>Tel : +216 55 603 597</p>
+        
+        <p>Skoda</p>
+        <p>Route régionale 23 Tunis, la goulette 2060</p>
+        <p>Tel : +216 55 603 597</p>
+        
+        <p>TOYOTA</p>
+        <p>Ain Zaghouan nord : Rue El Menzah, Tunis 2045</p>
+        <p>Tel : +216 55 603 597</p>
+        
+        <p>Hyundai</p>
+        <p>Zone Industrielle charguia 2, 1080 Tunis </p>
+        <p>Tel : +216 55 603 597</p>
+        
+        <p>Mercedes</p>
+        <p>Zone Industrielle charguia 2, 1080 Tunis cedex BP 129</p>
+        <p>Tel : +216 55 603 597</p>
+      </div>
+    </div>
+  </div>
+  

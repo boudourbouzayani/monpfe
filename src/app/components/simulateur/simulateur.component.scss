@@ -1,0 +1,447 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000000; /* Couleur de fond du header */
+  }
+
+  
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px; /* Espacement entre chaque élément de la barre de navigation */
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0; /* Supprimez l'espacement à droite du dernier élément */
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .auth-buttons {
+    display: flex;
+  }
+  
+  .login-button,
+  .signup-button {
+    background-color: #2c2929; /* Couleur des boutons de connexion et d'inscription */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .login-button:hover,
+  .signup-button:hover {
+    background-color: #121474; /* Couleur au survol des boutons */
+  }
+  .image-container {
+    text-align: center; /* Pour centrer le contenu horizontalement */
+  }
+  
+  .image-container img {
+    max-height: 400px; /* Définissez la hauteur maximale souhaitée */
+    width: auto; /* Pour maintenir les proportions de l'image */
+  }
+  h1 {
+    text-align: left; /* Aligner le titre à gauche */
+    margin-bottom: 20px; /* Ajouter une marge inférieure pour séparer le titre du texte */
+  }
+  
+  .image-message {
+    font-size: 18px; /* Taille du texte */
+    margin-bottom: 10px; /* Marge inférieure pour séparer le texte de l'image */
+  }
+  
+ 
+  .image-container {
+    text-align: center; /* Centrer l'image horizontalement */
+    margin-top: 0px; /* Espacement entre le header, la barre de navigation et l'image */
+    margin-left: 0; /* Annuler toute marge à gauche */
+    margin-right: 0; /* Annuler toute marge à droite */
+    padding-left: 0; /* Annuler tout rembourrage à gauche */
+    padding-right: 0; /* Annuler tout rembourrage à droite */
+  }
+  
+  .image-container img {
+    max-width: 100%; /* Assurez-vous que l'image ne dépasse pas la largeur du conteneur */
+    width: 100%; /* Ajustez la largeur de l'image pour qu'elle remplisse entièrement son conteneur */
+
+    display: block; /* Assurez-vous que l'image est affichée comme un bloc pour supprimer les espaces */
+    margin: 0 auto; /* Centrer l'image horizontalement en utilisant la marge automatique */
+  }
+  
+  .image-container {
+    position: relative; /* Assurez-vous que la position est relative pour que la position absolue de l'élément texte soit relative à ce conteneur */
+  }
+  
+  .image-message {
+    position: absolute; /* Position absolue par rapport au conteneur parent */
+    top: 90%; /* Aligner le haut du message au milieu de l'image */
+    left: 20%; /* Aligner le côté gauche du message au milieu de l'image */
+    transform: translate(-50%, -50%); /* Déplacer le message de moitié de sa propre largeur et hauteur pour le centrer exactement sur l'image */
+    color: #c7d8e9; /* Couleur du texte */
+    font-size: 18px; /* Taille de police */
+    font-weight: bold; /* Gras */
+    text-align: center; /* Centrer le texte horizontalement */
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour améliorer la lisibilité du texte */
+    padding: 10px 20px; /* Espacement à l'intérieur du message */
+  }
+  //
+  button {
+    padding: 20px 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: 0px;
+    background: transparent;
+    position: relative;
+    transition: all .2s;
+    overflow: hidden;
+    color: #fff;
+    border-radius: 30px;
+    box-shadow: 0px -0px 0px 0px rgba(143, 64, 248, .5), 0px 0px 0px 0px rgba(39, 200, 255, .5);
+  }
+  button {
+    padding: 20px 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: 0px;
+    background: transparent;
+    position: relative;
+    transition: all .2s;
+    overflow: hidden;
+    color: #fff;
+    border-radius: 30px;
+    box-shadow: 0px -0px 0px 0px rgba(143, 64, 248, .5), 0px 0px 0px 0px rgba(39, 200, 255, .5);
+  }
+  button:hover::after {
+    transform: rotate(150deg);
+  }
+  
+  button:hover {
+    transform: translate(0,-6px);
+    box-shadow: 10px -10px 25px 0px rgba(143,64, 248, .25), -10px 10px 25px 0px rgba(39, 200,255, .25);
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000000; /* Couleur de fond du header */
+  }
+  
+  .logo-container img {
+    width: 100px; /* Ajustez la taille de votre logo */
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px; /* Espacement entre chaque élément de la barre de navigation */
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0; /* Supprimez l'espacement à droite du dernier élément */
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+/* Style pour le libellé */
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Style pour la barre de défilement */
+.progress-container {
+  position: relative;
+  width: 100%;
+}
+
+input[type="range"] {
+  width: 100%;
+  height: 10px;
+  -webkit-appearance: none;
+  background-color: #f1f1f1; /* Couleur de fond de la barre de défilement */
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px; /* Largeur du pouce de la barre de défilement */
+  height: 20px; /* Hauteur du pouce de la barre de défilement */
+  background-color: #888; /* Couleur du pouce de la barre de défilement */
+  border-radius: 50%; /* Rendre le pouce de la barre de défilement circulaire */
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+/* Style pour la valeur affichée */
+.progress-value {
+  font-size: 14px;
+  text-align: center;
+}
+
+
+$number-of-options: 5;
+html, body {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Nunito', sans-serif;
+	color: #000;
+	user-select: none;
+}
+#form-wrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+form {
+	width: 90%;
+	max-width: 500px;
+	#form-title {
+		margin-top: 0;
+		font-weight: 400;
+		text-align: center;
+	}
+	#debt-amount-slider {
+		display: flex;
+		flex-direction: row;
+		align-content: stretch;
+		position: relative;
+		width: 100%;
+		height: 50px;
+		user-select: none;
+		&::before {
+			content: " ";
+			position: absolute;
+			height: 2px;
+			width: 100%;
+			width: calc(100% * (#{$number-of-options - 1} / #{$number-of-options}));
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background: #000;
+		}
+		input, label {
+			box-sizing: border-box;
+			flex: 1;
+			user-select: none;
+			cursor: pointer;
+		}
+		label {
+			display: inline-block;
+			position: relative;
+			width: 20%;
+			height: 100%;
+			user-select: none;
+			&::before {
+				content: attr(data-debt-amount);
+				position: absolute;
+				left: 50%;
+				padding-top: 10px;
+				transform: translate(-50%, 45px);
+				font-size: 14px;
+				letter-spacing: 0.4px;
+				font-weight: 400;
+				white-space: nowrap;
+				opacity: 0.85;
+				transition: all 0.15s ease-in-out;
+			}
+			&::after {
+				content: " ";
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				width: 30px;
+				height: 30px;
+				border: 2px solid #000;
+				background: #fff;
+				border-radius: 50%;
+				pointer-events: none;
+				user-select: none;
+				z-index: 1;
+				cursor: pointer;
+				transition: all 0.15s ease-in-out;
+			}
+			&:hover::after {
+				transform: translate(-50%, -50%) scale(1.25);
+			}
+		}
+		input {
+			display: none;
+			&:checked {
+				+ label::before {
+					font-weight: 800;
+					opacity: 1;
+				}
+				+ label::after {
+					border-width: 4px;
+					transform: translate(-50%, -50%) scale(0.75);
+				}
+				~ #debt-amount-pos {
+					opacity: 1;
+				}
+				@for $i from 1 through $number-of-options {
+					&:nth-child(#{$i * 2 - 1}) ~ #debt-amount-pos {
+						left: #{($i * 20%) - 10%};
+					}
+				}
+			}
+		}
+		#debt-amount-pos {
+			display: block;
+			position: absolute;
+			top: 50%;
+			width: 12px;
+			height: 12px;
+			background: #000;
+			border-radius: 50%;
+			transition: all 0.15s ease-in-out;
+			transform: translate(-50%, -50%);
+			border: 2px solid #fff;
+			opacity: 0;
+			z-index: 2;
+		}
+	}
+	&:valid {
+		#debt-amount-slider {
+			input {
+				+ label::before {
+					transform: translate(-50%, 45px) scale(0.9);
+					transition: all 0.15s linear;
+				}
+				&:checked + label::before {
+					transform: translate(-50%, 45px) scale(1.1);
+					transition: all 0.15s linear;
+				}
+			}
+		}
+	}
+	& + button {
+		display: block;
+		position: relative;
+		margin: 56px auto 0;
+		padding: 10px 20px;
+		appearance: none;
+		transition: all 0.15s ease-in-out;
+		font-family: inherit;
+		font-size: 24px;
+		font-weight: 600;
+		background: #fff;
+		border: 2px solid #000;
+		border-radius: 8px;
+		outline: 0;
+		user-select: none;
+		cursor: pointer;
+		&:hover {
+			// transform: scale(1.1);
+			background: #000;
+			color: #fff;
+			&:active {
+				transform: scale(0.9);
+			}
+		}
+		&:focus {
+			background: #4caf50;
+			border-color: #4caf50;
+			color: #fff;
+			pointer-events: none;
+			&::before {
+				animation: spin 1s linear infinite;
+			}
+		}
+		&::before {
+			display: inline-block;
+			width: 0;
+			opacity: 0;
+			content: "\f3f4";
+			font-family: "Font Awesome 5 Pro";
+			font-weight: 900;
+			margin-right: 0;
+			transform: rotate(0deg);
+		}
+	}
+	&:invalid + button {
+		pointer-events: none;
+		opacity: 0.25;
+	}
+}
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+		width: 24px;
+		opacity: 1;
+		margin-right: 12px;
+	}
+	to {
+		transform: rotate(360deg);
+		width: 24px;
+		opacity: 1;
+		margin-right: 12px;
+	}
+}
+.custom-button {
+  background-color: #007bff; /* Couleur de fond bleue */
+  color: #fff; /* Texte blanc */
+  padding: 8px 16px; /* Espacement intérieur */
+  border: none; /* Pas de bordure */
+  border-radius: 4px; /* Coins arrondis */
+  cursor: pointer; /* Curseur pointeur au survol */
+}
+#form-title {
+  font-size: 1rem; /* Taille de la police réduite */
+  margin-bottom: 5px; /* Marge inférieure réduite */
+}
+.modify-button-container button {
+	margin-left: 10px; /* Ajoute une marge à gauche pour séparer le bouton du champ de numéro */
+  }
+  .custom-button {
+	background-color: #0a0a0a; /* Couleur de fond */
+	color: white; /* Couleur du texte */
+	padding: 10px 20px; /* Espacement à l'intérieur du bouton */
+	border: none; /* Supprimer la bordure */
+	border-radius: 5px; /* Bordure arrondie */
+	cursor: pointer; /* Curseur de souris */
+	transition: background-color 0.3s; /* Transition en douceur pour la couleur de fond */
+  }
+  
+  .custom-button:hover {
+	background-color: #ce2d2d; /* Couleur de fond au survol */
+  }
+
+	
+  .blue-bg {
+	background-color: #060606; /* Couleur de fond bleu clair */
+	color: #fff; /* Couleur du texte blanc */
+  }
+  

@@ -1,0 +1,185 @@
+<header>
+  <div class="logo-container">
+    <a href="marketplace">
+      <img src="../../../assets/img/brand/logoo.jpg" alt="Logo de votre entreprise" style="width: 150px;">
+  </a>
+    </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votre Titre</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .social-icons {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .social-icons li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .social-icons li:last-child {
+            margin-right: 0;
+        }
+        .social-icons li a {
+            color: #333;
+            font-size: 20px;
+        }
+        /* Style pour le bouton du champ e-mail */
+        .btn-email {
+            background-color: #007bff;
+            border-color: #007bff;
+            color: #fff;
+        }
+        .btn-email:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+    </style>
+</head>
+  <nav> 
+
+    <ul>
+      <li><a [routerLink]="['/marketplace']">Marketplace</a></li>
+
+      <li><a [routerLink]="['/consultermarque']">Neuf</a></li>
+      <li><a [routerLink]="['/consulterproduit']">Produit</a></li>
+      <li><a [routerLink]="['/demandedevis']">Nous contacter</a></li>
+ 
+    </ul>
+  </nav>
+  <div class="auth-buttons">
+    <button  routerLink="/login">Connexion</button>
+    <button  routerLink="/register">inscription</button>
+  </div>
+</header>
+
+
+<div class="image-container">
+  <p class="image-message">"Libérez votre potentiel de conduite  <br> avec des véhicules qui inspirent l'aventure et le plaisir au volant."</p>
+  <img class="actualite-image" src="../../../assets/img/brand/car.jpg" alt="Description de votre image">
+</div>
+
+<h3 class="text-center my-5" style="font-weight: bold; font-size: 1.5rem; color: #393f81;">PRODUITS</h3>
+<hr class="text-center" style="border-color: #393f81; width: 50%;">
+<div class="produit-containers">
+  <div class="produit-item" *ngFor="let produit of produits">
+    <!-- Ajoutez un lien autour de chaque produit -->
+    <a (click)="redirectToDetails(produit.idproduit)">
+      <!-- Vous pouvez remplacer les balises <img>, <p>, etc. avec les propriétés de votre modèle Produit -->
+      <img [src]="produit.image" alt="{{ produit.modele }} image">
+      <div class="produit-info">
+        <p class="prix">À partir de :</p>
+        <p>{{ produit.prixproduit }}</p>
+      </div>
+    </a>
+    <!-- Ajoutez d'autres balises pour afficher les autres propriétés du produit -->
+    <!-- Par exemple, vous pouvez ajouter <p> pour afficher le modèle, la quantité, etc. -->
+  </div>
+</div>
+
+  <h3 class="text-center my-5" style="font-weight: bold; font-size: 1.5rem; color: #393f81;">TOUTES LES MARQUES AUTOCAR</h3>
+<hr class="text-center" style="border-color: #393f81; width: 50%;">
+
+  
+
+  <!-- marque-list.component.html -->
+  <div class="marque-container">
+    <div class="marque-item" *ngFor="let marque of marques">
+      <a [routerLink]="['/produitmarque', marque.idmarque]">
+        <img [src]="marque.logomarque" alt="{{ marque.nommarque }} logo" class="marque-image">
+      </a>
+      <!-- <p>{{ marque.nommarque }}</p> -->
+    </div>
+  
+  
+  </div>
+  <h3 class="text-center my-5" style="font-weight: bold; font-size: 1.5rem; color: #393f81;">ACTUALITE</h3>
+  <hr class="text-center" style="border-color: #393f81; width: 50%;">
+  
+
+  <div class="actualites-container">
+  
+    <div class="image-actualite"></div> <!-- Cet élément contiendra votre image de fond -->
+    <div class="actualite">
+      <div class="actualite-content">
+        <h4>INSCRIVEZ-VOUS POUR RECEVOIR NOS DERNIÈRES ACTUS</h4>
+        <p>Recevoir des nouveautés produits et actus dans votre boîte mail</p>
+        <!-- Formulaire d'inscription -->
+        <form>
+          <label for="email">Adresse e-mail</label>
+          <input type="email" id="email" name="email" required>
+          <button type="submit">S'inscrire</button>
+          <p class="error-message">L'email est obligatoire</p>
+        </form>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Rejoignez-nous</h2>
+            <p>Inscrivez-vous pour recevoir des offres</p>
+            <form>
+                <div class="form-group">
+                    <label for="email">Adresse e-mail</label>
+                    <div class="input-group">
+                        <input type="email" class="form-control" id="email" placeholder="Votre adresse e-mail">
+                        <div class="input-group-append">
+                            <button type="submit" class="btn btn-email">S'inscrire</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <h2>Suivez-Nous</h2>
+            <p>Inscrivez-vous pour recevoir des offres</p>
+            <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <!-- Ajoutez ici d'autres icônes de réseaux sociaux -->
+            </ul>
+        </div>
+    </div>
+</div>
+  <footer>
+    <div class="footer-menu">
+        <h3>Menu</h3>
+        <ul>
+          <li><a [routerLink]="['/consultermarque']">Consulter Marque</a></li>
+          <li><a [routerLink]="['/consulterproduit']">Consulter Produit</a></li>
+          <li><a [routerLink]="['/demandedevis']">Contact</a></li>
+            
+        </ul>
+    </div>
+    <div class="footer-contact">
+        <h3>Contact</h3>
+        <ul>
+            <li><a href="#">Nous contacter</a></li>
+            <li><a href="#">Support technique</a></li>
+            <li><a href="#">Service client</a></li>
+        </ul>
+    </div>
+    <div class="footer-help-support">
+        <h3>Help & Support</h3>
+        <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Politique de confidentialité</a></li>
+            <li><a href="#">Conditions d'utilisation</a></li>
+        </ul>
+    </div>
+    <div class="footer-payment">
+        <h3>Payment</h3>
+        <ul>
+            <li><a href="#">Modes de paiement</a></li>
+            <li><a href="#">Politique de remboursement</a></li>
+        </ul>
+    </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</footer>

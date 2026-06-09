@@ -1,0 +1,69 @@
+.container{
+    color: #000;
+  }
+  
+  .box {
+  background-color: #fff;
+  }
+  
+  .item {
+      /* Add your styles for each item here */
+      position: relative;
+      transition: transform 0.3s ease;
+  }
+  
+  .item img {
+      /* Add your styles for the item image here */
+      width: 90%;
+      height: auto;
+  }
+  
+  .item .body {
+      /* Add your styles for the item body here */
+      padding: 10px;
+  }
+  
+  .item h4 {
+      /* Add your styles for the item title here */
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 5px;
+  }
+  
+  .item p {
+      /* Add your styles for the item description here */
+      font-size: 14px;
+  }
+  
+  .item .px-3 {
+      /* Add your styles for the item's inner container here */
+      padding: 5px;
+      border: 1px solid #ccc;
+  }
+  
+  .item .btn {
+      /* Add your styles for the Add To Cart button here */
+      background-color: #28a745;
+      color: #fff;
+      padding: 8px 16px;
+      border: none;
+      cursor: pointer;
+  }
+  
+  .item .btn:hover {
+      /* Add your styles for the Add To Cart button on hover here */
+      background-color: #218838;
+  }
+  
+  .item span {
+      /* Add your styles for the price here */
+      font-size: 18px;
+      font-weight: bold;
+  }
+  
+  .item:hover {
+      /* Add your styles for the item on hover here */
+      transform: translateY(-5px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  

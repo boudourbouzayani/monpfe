@@ -1,0 +1,51 @@
+<aside class="sidebar">
+    <ul class="menu">
+      <li><a [routerLink]="['/admin/utilisateur']">Utilisateurs</a></li>
+      <li><a [routerLink]="['/adminconc']">Concessionnaire</a></li>
+      <li><a [routerLink]="['/consulteradmin']">Admin</a></li>
+      <li><a [routerLink]="['/gerermarque']">Gerer marque</a></li>
+      <li><a [routerLink]="['/gererproduit']">Gerer produit</a></li>
+      <li><a [routerLink]="['/consulterrole']">Consulter Role</a></li>
+      <li><a [routerLink]="['/consulterdemande']">Consulter Demande</a></li>
+      <li><a [routerLink]="['/validermarque']">Valider Marque</a></li>
+    </ul>
+  </aside>
+
+    <main class="main-content">
+        <div class="user-list">
+          <div class="user-list-header">
+            <h2 class="user-list-title"><i class="fas fa-list-ul"></i> Liste des Demandes</h2>
+            <button class="add-user-button" [routerLink]="['/ajouterdemande']"><i class="fas fa-folder-plus"></i> Ajouter Demande</button>
+          </div>
+    <!-- Tableau pour afficher les demandes -->
+    <table class="table table-minimized">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Utilisateur</th>
+          <th>Date</th>
+          <th>Montant</th>
+          <th>Status</th>
+          <th>Description</th>
+          <th>Etat</th>
+          <th>Devis</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Boucle sur toutes les demandes -->
+        <tr *ngFor="let demande of demandes">
+          <!-- Affichage des données de chaque demande -->
+          <td>{{ demande.iddemande }}</td>
+          <td>{{ demande.idutilisateur }}</td>
+          <td>{{ demande.date  }}</td> <!-- Formatage de la date -->
+          <td>{{ demande.montant }}</td>
+          <td>{{ demande.status }}</td>
+          <td>{{ demande.description }}</td>
+          <td>{{ demande.idetatdemande }}</td>
+          <td>{{ demande.numdevis }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  </div>

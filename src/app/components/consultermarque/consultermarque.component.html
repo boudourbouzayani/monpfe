@@ -1,0 +1,80 @@
+<header>
+  <div class="logo-container">
+    <a href="marketplace">
+      <img src="../../../assets/img/brand/logoo.jpg" alt="Logo de votre entreprise" style="width: 150px;">
+  </a>
+    </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votre Titre</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .social-icons {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .social-icons li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .social-icons li:last-child {
+            margin-right: 0;
+        }
+        .social-icons li a {
+            color: #333;
+            font-size: 20px;
+        }
+        /* Style pour le bouton du champ e-mail */
+        .btn-email {
+            background-color: #007bff;
+            border-color: #007bff;
+            color: #fff;
+        }
+        .btn-email:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+    </style>
+</head>
+  <nav> 
+
+    <ul>
+      <li><a [routerLink]="['/marketplace']">Marketplace</a></li>
+
+      <li><a [routerLink]="['/consultermarque']">Neuf</a></li>
+      <li><a [routerLink]="['/consulterproduit']">Produit</a></li>
+      <li><a [routerLink]="['/demandedevis']">Nous contacter</a></li>
+ 
+    </ul>
+  </nav>
+  <div class="auth-buttons">
+    <button  routerLink="/login">Connexion</button>
+    <button  routerLink="/register">inscription</button>
+  </div>
+</header>
+
+
+<div class="image-container">
+  <p class="image-message">"Libérez votre potentiel de conduite  <br> avec des véhicules qui inspirent l'aventure et le plaisir au volant."</p>
+  <img src="../../../assets/img/brand/voiture.jpeg" alt="Description de votre image">
+</div>
+
+<h3 class="text-center my-5" style="font-weight: bold; font-size: 1.5rem; color: #393f81;">TOUTES LES MARQUES AUTOCAR</h3>
+<hr class="text-center" style="border-color: #393f81; width: 50%;">
+
+  
+
+<!-- marque-list.component.html -->
+<div class="marque-container">
+  <div class="marque-item" *ngFor="let marque of marques">
+    <a [routerLink]="['/produitmarque', marque.idmarque]">
+      <img [src]="marque.logomarque" alt="{{ marque.nommarque }} logo" class="marque-image">
+    </a>
+    <!-- <p>{{ marque.nommarque }}</p> -->
+  </div>
+
+
+</div>

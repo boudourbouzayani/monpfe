@@ -1,0 +1,25 @@
+<aside class="sidebar">
+  <ul class="menu">
+    <li><a [routerLink]="['/admin/utilisateur']">Utilisateurs</a></li>
+    <li><a [routerLink]="['/adminconc']">Concessionnaire</a></li>
+    <li><a [routerLink]="['/consulteradmin']">Admin</a></li>
+    <li><a [routerLink]="['/gerermarque']">Gerer marque</a></li>
+    <li><a [routerLink]="['/gererproduit']">Gerer produit</a></li>
+    <li><a [routerLink]="['/consulterrole']">Consulter Role</a></li>
+    <li><a [routerLink]="['/validermarque']">Valider Marque</a></li>
+    <li><a [routerLink]="['/validerdemande']">Valider Demande</a></li>
+
+    <li><a href="" (click)="onLogout()">Deconnexion</a></li>
+  </ul>
+</aside>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 order-md-last">
+      <canvas id="usersChart" width="300" height="300"></canvas> <!-- Réduisez la largeur et la hauteur ici -->
+    </div>
+    <div class="col-md-6 order-md-last">
+      <canvas id="demandsByEtatChart" width="300" height="300"></canvas> <!-- Réduisez la largeur et la hauteur ici -->
+    </div>
+  </div>
+</div>

@@ -1,0 +1,83 @@
+<header>
+  <div class="logo-container">
+    <a href="marketplace">
+      <img src="../../../assets/img/brand/logoo.jpg" alt="Logo de votre entreprise" style="width: 150px;">
+  </a>
+    </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votre Titre</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .social-icons {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .social-icons li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .social-icons li:last-child {
+            margin-right: 0;
+        }
+        .social-icons li a {
+            color: #333;
+            font-size: 20px;
+        }
+        /* Style pour le bouton du champ e-mail */
+        .btn-email {
+            background-color: #007bff;
+            border-color: #007bff;
+            color: #fff;
+        }
+        .btn-email:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+    </style>
+</head>
+  <nav> 
+
+    <ul>
+      <li><a [routerLink]="['/marketplace']">Marketplace</a></li>
+
+      <li><a [routerLink]="['/consultermarque']">Neuf</a></li>
+      <li><a [routerLink]="['/consulterproduit']">Produit</a></li>
+      <li><a [routerLink]="['/demandedevis']">Nous contacter</a></li>
+ 
+    </ul>
+  </nav>
+  <div class="auth-buttons">
+    <button  routerLink="/login">Connexion</button>
+    <button  routerLink="/register">inscription</button>
+  </div>
+</header>
+  
+  <div class="image-container" style="width: 100%;">
+    <!-- Ajoutez la balise <video> avec la source de la vidéo -->
+    <video autoplay loop muted style="width: 90%; max-height: 500px; outline: none;">
+      <source src=" https://www.automobile.tn/images/banniere/video/byd/hangar-1000x300.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!--https://www.automobile.tn/images/banniere/video/byd/hangar-1000x300.mp4 -->
+  <!--https://tn.audi.com/content/dam/nemo/tn/refont/modeles/audi-e-tron-gt/e-tron-gt/my-2022/NeMo-Carline-Startpage/1920x1080-mtc-16-9/video/AVPCONPRO-2147_DrivingScene_EtronGT_FullHD_LQ.mp4" -->
+
+  <div class="produit-container">
+    <div *ngFor="let produit of produits" class="produit-item">
+      <a [routerLink]="['/detailsproduit', produit.idproduit]">
+        <img [src]="produit.image" alt="Image du produit" class="produit-image">
+      </a>
+      <div class="produit-details">
+        <h2>{{ produit.nomproduit }}</h2>
+        <p class="modele">{{ produit.modele }}</p>
+        <p class="prix">à partir de {{ produit.prixproduit }}</p>
+  
+      </div>
+    </div>
+  </div>//
+  

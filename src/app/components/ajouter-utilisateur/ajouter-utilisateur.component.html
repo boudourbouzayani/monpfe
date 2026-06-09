@@ -1,0 +1,61 @@
+<!-- HTML -->
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-7 col-md-9 col-xl-6">
+      <div class="card mx-4">
+        <div class="card-body p-4">
+          <h1 class="text-center mb-4">Ajouter un utilisateur</h1>
+          <form #myForm="ngForm" class="row g-3" (ngSubmit)="addUser(myForm)">
+            <div class="col-md-6">
+              <label for="nom" class="form-label">Nom</label>
+              <input id="nom" [(ngModel)]="nom" name="nom" class="form-control" placeholder="Nom" required>
+            </div>
+            <div class="col-md-6">
+              <label for="prenom" class="form-label">Prénom</label>
+              <input id="prenom" [(ngModel)]="prenom" name="prenom" class="form-control" placeholder="Prénom" required>
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label">Email</label>
+              <input id="email" [(ngModel)]="email" name="email" class="form-control" placeholder="Email" required>
+            </div>
+            <div class="col-md-6">
+              <label for="motdepasse" class="form-label">Mot de passe</label>
+              <input id="motdepasse" [(ngModel)]="password" name="motdepasse" class="form-control" placeholder="Mot de passe" type="password" required>
+            </div>
+            <div class="col-md-6">
+              <label for="telephone" class="form-label">Téléphone</label>
+              <input id="telephone" [(ngModel)]="telephone" name="telephone" class="form-control" placeholder="Téléphone" required>
+            </div>
+            <div class="col-md-6">
+              <label for="adresse" class="form-label">Adresse</label>
+              <input id="adresse" [(ngModel)]="adresse" name="adresse" class="form-control" placeholder="Adresse" required>
+            </div>
+            <div class="col-md-6">
+              <label for="ville" class="form-label">Ville</label>
+              <input id="ville" [(ngModel)]="ville" name="ville" class="form-control" placeholder="Ville" required>
+            </div>
+            <div class="col-md-6">
+              <label for="codepostal" class="form-label">Code Postal</label>
+              <input id="codepostal" [(ngModel)]="codepostal" name="codepostal" class="form-control" placeholder="Code Postal" required>
+            </div>
+            <div class="col-md-6">
+              <label for="datenaissance" class="form-label">Date de Naissance</label>
+              <input id="datenaissance" [(ngModel)]="datenaissance" name="datenaissance" class="form-control" placeholder="Date de Naissance" required>
+            </div>
+            <div class="col-md-6">
+              <label for="idrole" class="form-label">Rôle</label>
+              <select id="idrole" [(ngModel)]="idrole" name="idrole" class="form-select" required>
+                <option value="" disabled selected>Choisir un rôle</option>
+                <option value="admin">Admin</option>
+                <option value="concessionnaire">Concessionnaire</option>
+              </select>
+            </div>
+            <div class="col-12 mt-4">
+              <button type="submit" class="btn btn-primary btn-lg w-100">Ajouter</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

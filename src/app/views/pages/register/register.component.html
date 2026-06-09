@@ -1,0 +1,136 @@
+<header>
+  <div class="logo-container">
+    <a href="marketplace">
+      <img src="../../../assets/img/brand/logoo.jpg" alt="Logo de votre entreprise" style="width: 150px;">
+  </a>
+    </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votre Titre</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .social-icons {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .social-icons li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .social-icons li:last-child {
+            margin-right: 0;
+        }
+        .social-icons li a {
+            color: #333;
+            font-size: 20px;
+        }
+        /* Style pour le bouton du champ e-mail */
+        .btn-email {
+            background-color: #007bff;
+            border-color: #007bff;
+            color: #fff;
+        }
+        .btn-email:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+    </style>
+</head>
+  <nav> 
+
+    <ul>
+      <li><a [routerLink]="['/marketplace']">Marketplace</a></li>
+
+      <li><a [routerLink]="['/consultermarque']">Neuf</a></li>
+      <li><a [routerLink]="['/consulterproduit']">Produit</a></li>
+      <li><a [routerLink]="['/demandedevis']">Nous contacter</a></li>
+ 
+    </ul>
+  </nav>
+  <div class="auth-buttons">
+    <button  routerLink="/login">Connexion</button>
+    <button  routerLink="/register">inscription</button>
+  </div>
+</header>
+
+<main>
+  <!-- Votre vidéo d'en-tête -->
+  <video src="../../../../assets/img/brand/video.mp4" autoplay loop muted class="header-video"></video>
+  <div class="bg-white min-vh-100 d-flex flex-row align-items-center">
+  <div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-12 col-md-10 col-xl-10"> <!-- Ajustement de la largeur du formulaire -->
+
+        <div class="card mx-4" style="background-color: #76767a; color: white;">
+          <div class="card-body p-4">
+            <form #myForm="ngForm" (ngSubmit)="register(myForm)">
+              <h1 style="color: rgb(9, 9, 9);">Register</h1>
+              <p class="text-medium-emphasis">Create your account</p>
+              <div class="mb-3 row">
+                <div class="col-md-6">
+                  <label for="nom" class="form-label">Nom</label>
+                  <input id="nom" [(ngModel)]="nom" name="nom" class="form-control" placeholder="Nom" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="prenom" class="form-label">Prénom</label>
+                  <input id="prenom" [(ngModel)]="prenom" name="prenom" class="form-control" placeholder="Prénom" required>
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email</label>
+                  <input id="email" [(ngModel)]="email" name="email" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="motdepasse" class="form-label">Mot de passe</label>
+                  <input id="motdepasse" [(ngModel)]="password" name="motdepasse" class="form-control" placeholder="Mot de passe" type="password" required>
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <div class="col-md-6">
+                  <label for="telephone" class="form-label">Téléphone</label>
+                  <input id="telephone" [(ngModel)]="telephone" name="telephone" class="form-control" placeholder="Téléphone" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="adresse" class="form-label">Adresse</label>
+                  <input id="adresse" [(ngModel)]="adresse" name="adresse" class="form-control" placeholder="Adresse" required>
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <div class="col-md-6">
+                  <label for="ville" class="form-label">Ville</label>
+                  <input id="ville" [(ngModel)]="ville" name="ville" class="form-control" placeholder="Ville" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="codepostal" class="form-label">Code postal</label>
+                  <input id="codepostal" [(ngModel)]="codepostal" name="codepostal" class="form-control" placeholder="Code postal" required>
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <div class="col-md-6">
+                  <label for="datedenaissance" class="form-label">Date de naissance</label>
+                  <input id="datedenaissance" [(ngModel)]="datenaissance" name="datedenaissance" class="form-control" placeholder="Date de naissance" required>
+                </div>
+              </div>
+
+              <div class="mb-3 row">
+               
+                <div class="col-md-6">
+                  <button type="submit" class="btn btn-lg btn-outline-light btn-block">Create Account</button>
+                </div>
+             
+              </div>
+              
+            </form>
+          </div>
+        </div>
+      </div>
+    
+     </div>
+      </div>
+    </div>
+  
+  </main>

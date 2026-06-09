@@ -1,0 +1,96 @@
+
+
+.sidebar {
+  background-color: #e9e7e7;
+  padding: 10px;
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: hidden; /* Supprimer la barre de défilement verticale */
+}
+
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  padding: 8px 0;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333333;
+  display: block;
+  border-radius: 5px;
+  padding: 8px 12px;
+}
+
+.menu li a:hover {
+  background-color: #9cc6f3;
+  color: white;
+}
+
+.container {
+  margin-left: 220px;
+  padding: 20px;
+}
+
+.container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.container th, .container td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.container th {
+  background-color: #f2f2f2;
+}
+
+.product-image {
+  width: 100px;
+  height: auto;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+}
+
+.action-button {
+  padding: 8px 12px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+}
+
+.action-button:hover {
+  opacity: 0.8;
+}
+.container {
+  margin-left: 220px;
+  padding: 20px;
+  height: calc(100vh - 20px); /* Ajustement de la hauteur pour tenir compte de la barre latérale */
+  overflow: hidden; /* Empêcher le débordement du contenu */
+}
+.action-button {
+  padding: 6px 10px; /* Réduire le remplissage des boutons */
+  margin-right: 5px; /* Réduire la marge à droite */
+  border-radius: 3px; /* Coins arrondis */
+}
+
+/* Style pour les icônes des boutons */
+.action-button i {
+  margin-right: 3px; /* Réduire la marge à droite des icônes */
+}

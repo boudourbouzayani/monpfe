@@ -1,0 +1,220 @@
+/* Style pour le conteneur des marques */
+.marque-container {
+  display: grid; /* Utilisation de la grille pour organiser les éléments */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Colonnes de largeur minimale de 300px */
+  gap: 20px; /* Espacement entre les éléments */
+}
+
+/* Style pour chaque élément de marque */
+.marque-item {
+  display: flex; /* Affichage en ligne des éléments */
+  flex-direction: column; /* Alignement vertical des éléments */
+  align-items: center; /* Centrage horizontal */
+  padding: 20px; /* Espacement interne */
+  border: 1px solid #ccc; /* Bordure */
+  border-radius: 5px; /* Coins arrondis */
+}
+
+/* Style pour le nom de la marque */
+.marque-name {
+  font-size: 18px; /* Taille de police */
+  font-weight: bold; /* Gras */
+  margin-bottom: 10px; /* Marge inférieure */
+}
+
+/* Style pour le logo */
+.marque-logo {
+  width: 150px; /* Largeur du logo */
+  height: auto; /* Hauteur automatique pour maintenir les proportions */
+  margin-bottom: 10px; /* Marge inférieure */
+}
+
+/* Style pour les boutons */
+.action-button {
+  padding: 8px 10px; /* Remplissage des boutons */
+  margin-top: 10px; /* Marge supérieure */
+  border: none; /* Pas de bordure */
+  border-radius: 5px; /* Coins arrondis */
+  cursor: pointer; /* Curseur pointeur */
+}
+
+/* Style spécifique pour le bouton Supprimer */
+.delete-button {
+  background-color: #4690f8; /* Couleur de fond pour le bouton Supprimer */
+  color: #fff; /* Couleur du texte */
+}
+
+/* Style spécifique pour le bouton Modifier */
+.modify-button {
+  background-color: #3e97f7; /* Couleur de fond pour le bouton Modifier */
+  color: #fff; /* Couleur du texte */
+}
+
+
+.marque-table td.logo img {
+max-width: 70px; /* Définir une largeur maximale pour l'image */
+max-height: 70px; /* Définir une hauteur maximale pour l'image */
+}
+ 
+  .marque-section {
+    margin-left: 220px; /* Ajout de la marge pour tenir compte de la largeur de la barre latérale */
+  }
+  .marque-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .marque-table th, .marque-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  .marque-table th {
+    background-color: #f2f2f2;
+  }
+  .marque-table td.logo {
+    width: 100px; /* Largeur de la colonne Logo */
+  }
+  .marque-table td.nom {
+    width: 200px; /* Largeur de la colonne Nom */
+  }
+  .marque-table td.actions {
+    width: 120px; /* Largeur de la colonne Actions */
+  }
+  .marque-actions button {
+    margin-right: 5px;
+  }
+  .marque-table td.logo img {
+    transition: filter 0.3s; /* Ajout d'une transition pour un effet en douceur */
+    filter: grayscale(100%); /* Convertit l'image en noir et blanc par défaut */
+  }
+  .marque-table td.logo img:hover {
+    filter: none; /* Annuler le filtre pour afficher l'image en couleur lors du survol */
+  }
+
+
+/* Style pour la barre latérale */
+.sidebar {
+  background-color: #e9e7e7;
+  padding: 10px;
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto; /* Ajout de défilement vertical si le contenu dépasse la hauteur de la barre latérale */
+}
+
+/* Style pour la liste de menu dans la barre latérale */
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  padding: 8px 0;
+}
+
+/* Style pour les boutons dans la barre latérale */
+.menu li a {
+  text-decoration: none;
+  color: #333333;
+  display: block;
+  border-radius: 5px; /* Arrondir les coins des boutons */
+  padding: 8px 12px; /* Ajuster le padding des boutons */
+}
+
+/* Au survol des boutons dans la barre latérale */
+.menu li a:hover {
+  background-color: #9cc6f3; /* Couleur de fond bleue */
+  color: white; /* Couleur du texte en blanc */
+}
+.add-button {
+  float: right; /* Déplacer le bouton vers la droite */
+  margin-right: 30px; /* Ajouter une marge à droite */
+  margin-top: 20px; /* Ajouter une marge en haut */
+  margin-bottom: 20px; /* Ajouter une marge en bas */
+  background-color: #3f97f4; /* Couleur de fond */
+  color: #fff; /* Couleur du texte */
+  padding: 8px 16px; /* Ajuster le padding */
+  border: none; /* Supprimer la bordure */
+  border-radius: 5px; /* Coins arrondis */
+  cursor: pointer; /* Curseur pointeur */
+}
+
+.add-button:hover {
+  background-color: #3592f5; /* Changement de couleur au survol */
+}
+
+.add-button::before {
+  content: '\f055'; /* Code de l'icône (ici une icône "+" d'FontAwesome) */
+  font-family: 'Font Awesome\ 5 Free'; /* Famille de police pour les icônes */
+  margin-right: 5px; /* Marge à droite de l'icône */
+}
+
+/* Style pour la colonne du logo */
+.marque-table td.logo {
+  width: 100px; /* Largeur de la colonne Logo */
+}
+
+/* Style pour la colonne du nom */
+.marque-table td.nom {
+  width: 0; /* Largeur de la colonne Nom */
+}
+
+/* Style pour la colonne des actions */
+.marque-table td.actions {
+  width: 120px; /* Largeur de la colonne Actions */
+}
+.marque-section {
+  width: calc(100% - 220px); /* Largeur disponible moins la marge de la barre latérale */
+  overflow-x: hidden; /* Masquer la barre de défilement horizontale */
+}
+
+.marque-container {
+  width: 200%; /* Utiliser toute la largeur disponible */
+}
+
+.marque-table {
+  width: 120%; /* Utiliser toute la largeur disponible */
+}
+
+/* Style pour les boutons */
+.action-button {
+  padding: 6px 8px; /* Réduire le remplissage des boutons */
+  margin-top: 8px; /* Réduire la marge supérieure */
+  margin-right: 8px; /* Ajouter une marge à droite */
+  border: none; /* Pas de bordure */
+  border-radius: 5px; /* Coins arrondis */
+  cursor: pointer; /* Curseur pointeur */
+}
+
+/* Style pour le bouton Ajouter */
+.add-button {
+  margin-top: 8px; /* Réduire la marge supérieure */
+  margin-bottom: 8px; /* Réduire la marge inférieure */
+  padding: 6px 10px; /* Réduire le remplissage */
+}
+
+/* Style pour les icônes des boutons */
+.action-button i {
+  margin-right: 3px; /* Réduire la marge à droite des icônes */
+}
+/* Style pour les boutons */
+.action-button {
+  padding: 6px 10px; /* Réduire légèrement le padding des boutons */
+  margin-top: 8px; /* Réduire la marge supérieure */
+  margin-right: 8px; /* Ajouter une marge à droite */
+  border: none; /* Pas de bordure */
+  border-radius: 5px; /* Coins arrondis */
+  cursor: pointer; /* Curseur pointeur */
+  font-size: 0.9rem; /* Réduire légèrement la taille de la police */
+}
+
+/* Style pour le bouton Ajouter */
+.add-button {
+  margin-top: 8px; /* Réduire la marge supérieure */
+  margin-bottom: 8px; /* Réduire la marge inférieure */
+  padding: 6px 10px; /* Réduire légèrement le padding */
+  font-size: 0.9rem; /* Réduire légèrement la taille de la police */
+}

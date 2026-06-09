@@ -1,0 +1,60 @@
+<aside class="sidebar">
+  <ul class="menu">
+    <li><a [routerLink]="['/admin/utilisateur']">Utilisateurs</a></li>
+    <li><a [routerLink]="['/adminconc']">Concessionnaire</a></li>
+    <li><a [routerLink]="['/consulteradmin']">Admin</a></li>
+    <li><a [routerLink]="['/gerermarque']">Gerer marque</a></li>
+    <li><a [routerLink]="['/gererproduit']">Gerer produit</a></li>
+    <li><a [routerLink]="['/consulterrole']">Consulter Role</a></li>
+    <li><a [routerLink]="['/validermarque']">Valider Marque</a></li>
+    <li><a [routerLink]="['/validerdemande']">Valider Demande</a></li>
+    <li><a [routerLink]="['/consulterdemande']">Consulter Demande</a></li>
+
+    <li><a href="" (click)="onLogout()">Deconnexion</a></li>
+  </ul>
+</aside>
+  
+  <div class="container">
+    <table>
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Nom du produit</th>
+          <th>Modèle</th>
+          <th>Kilométrage</th>
+          <th>Prix</th>
+          <th>Description</th>
+          <th>Quantité</th>
+          <th>État de validation</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let produit of produits">
+          <td><img [src]="produit.image" alt="Image du produit" class="product-image"></td>
+          <td>{{ produit.nomproduit }}</td>
+          <td>{{ produit.modele }}</td>
+          <td>{{ produit.kilometrage }}</td>
+          <td>{{ produit.prixproduit }}</td>
+          <td>{{ produit.description }}</td>
+          <td>{{ produit.quantite }}</td>
+          <td>{{ produit.idetatproduit.labelleetat }}</td>
+          <td>
+            <div class="buttons-container">
+              <button class="action-button" (click)="onActiver(produit.idproduit, produit)">
+                <i class="fas fa-check"></i> Valider
+              </button>
+              
+              <button class="action-button" (click)="onDesactiver(produit.idproduit, produit)">
+                <i class="fas fa-times"></i> Refuser
+              </button>
+              
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+  </div>
+  

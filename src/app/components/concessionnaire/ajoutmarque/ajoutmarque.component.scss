@@ -1,0 +1,191 @@
+/* Styles existants */
+*{
+    margin: 0;
+  }
+  
+
+
+
+  
+
+    
+   
+    /* Styles pour le bouton de déconnexion */
+ 
+    
+  /* Styles pour la sidebar */
+  
+  
+    /* Styles pour la liste de la sidebar */
+    .menu {
+      list-style: none; /* Supprimer les puces de liste */
+      padding: 0; /* Supprimer le remplissage par défaut de la liste */
+    }
+    
+    /* Styles pour les éléments de la liste de la sidebar */
+    .menu li {
+      padding: 10px; /* Remplissage pour les éléments de la liste */
+    }
+    
+    /* Styles pour les liens de la sidebar */
+    .menu li a {
+      text-decoration: none; /* Supprimer la décoration de texte par défaut */
+      color: #fff; /* Couleur du texte */
+      display: flex; /* Utiliser flexbox */
+      align-items: center; /* Centrer verticalement les éléments */
+      padding: 10px; /* Ajouter du padding pour l'espace autour du texte */
+      border-radius: 5px; /* Ajouter des bords arrondis */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajouter une ombre */
+    }
+    
+    /* Styles au survol des liens de la sidebar */
+    .menu li a:hover {
+      background-color: #2c0c0c; /* Couleur de fond au survol */
+    }
+    
+    
+
+table {
+  width: 140%; /* Largeur du tableau */
+  border-collapse: collapse; /* Fusionner les bordures de cellules */
+}
+
+/* Styles pour les en-têtes de colonnes */
+table th, table td {
+  padding: 10px; /* Ajoutez de l'espace à l'intérieur des cellules */
+  text-align: center; /* Alignement du texte au centre */
+  border-bottom: 3px solid #ddd; /* Bordure en bas de chaque ligne */
+}
+
+/* Styles pour les lignes de données impaires */
+table tbody tr:nth-child(odd) {
+  background-color: #f2f2f2; /* Couleur de fond pour les lignes impaires */
+}
+
+/* Styles pour les boutons d'action */
+.action-button {
+  background-color: #817c7c; /* Couleur du bouton */
+  color: white; /* Couleur du texte */
+  border: none; /* Supprimer la bordure */
+  padding: 8px 16px; /* Ajouter de l'espace à l'intérieur du bouton */
+  cursor: pointer; /* Curseur pointeur au survol */
+  margin-right: 5px; /* Marge à droite */
+}
+
+/* Styles au survol des boutons d'action */
+.action-button:hover {
+  background-color: #211a2e; /* Couleur du bouton au survol */
+}
+
+/* Style pour le conteneur des boutons */
+.buttons-container {
+  display: flex; /* Utiliser flexbox */
+  justify-content: center; /* Centrer les éléments horizontalement */
+  align-items: center; /* Centrer les éléments verticalement */
+}
+/* Styles pour les images dans le tableau */
+table td img {
+  max-width: 100px; /* Définissez une largeur maximale pour l'image */
+  max-height: 100px; /* Définissez une hauteur maximale pour l'image */
+}
+
+
+  
+  .marque-container {
+    margin-left: 15%; /* Rétablir la marge à gauche */
+    width: calc(100% - 15%); /* Calculer la largeur du conteneur en soustrayant la largeur de la sidebar */
+  }
+  
+  /* Ajoutez ces styles pour la classe image-column */
+.image-column {
+    filter: grayscale(100%); /* Convertir l'image en noir et blanc par défaut */
+    transition: filter 0.3s ease; /* Ajouter une transition pour une animation fluide */
+  }
+  
+  /* Styles au survol de l'image */
+  .image-column:hover {
+    filter: none; /* Annuler le filtre de noir et blanc au survol */
+  }
+  
+  .header {
+    background-color: #a39393; /* Couleur de fond du header par défaut */
+    color: #fff; /* Couleur du texte par défaut */
+    padding: 20px 20px; /* Remplissage intérieur par défaut */
+    display: flex; /* Utiliser un affichage flex pour aligner les éléments */
+    justify-content: space-between; /* Aligner les éléments sur les côtés */
+    align-items: center; /* Centrer les éléments verticalement */
+    position: fixed; /* Position fixe pour rester en haut de la page */
+    width: 100%; /* Largeur de 100% pour couvrir toute la largeur de la fenêtre */
+    z-index: 1; /* Assurer que le header est au-dessus du contenu principal */
+  }
+  
+  .brand {
+    display: flex; /* Utiliser un affichage flex pour aligner les éléments du brand */
+    align-items: center; /* Centrer les éléments verticalement */
+  }
+  
+  .brand img {
+    width: 60px; /* Largeur du logo */
+    height: 60px; /* Hauteur du logo */
+    margin-right: 20px; /* Marge à droite pour séparer du texte */
+  }
+  
+  .navigation {
+    font-family: Arial, sans-serif; /* Définir la police de caractères */
+}
+
+.navigation ul {
+    list-style: none; /* Supprimer les puces de liste */
+    padding: 0; /* Supprimer les marges internes de la liste */
+}
+
+.navigation li {
+    display: inline-block; /* Afficher les éléments de la liste en ligne */
+    margin-right: 20px; /* Ajouter une marge à droite entre les éléments */
+}
+
+.navigation li:last-child {
+    margin-right: 0; /* Supprimer la marge à droite du dernier élément */
+}
+
+.navigation a {
+    text-decoration: none; /* Supprimer la soulignement des liens */
+    color: #333; /* Définir la couleur du texte des liens */
+    transition: color 0.3s; /* Ajouter une transition sur la couleur du texte */
+}
+
+.navigation a:hover {
+    color: #007bff; /* Changer la couleur du texte au survol */
+}
+
+  .actions {
+    display: flex; /* Utiliser un affichage flex pour aligner les éléments des actions */
+    align-items: center; /* Centrer les éléments verticalement */
+  }
+  
+  .actions a {
+    text-decoration: none; /* Supprimer la décoration de texte par défaut */
+    color: #fff; /* Couleur du texte */
+    padding: 8px 16px; /* Ajouter de l'espace à l'intérieur du bouton */
+    margin-right: 10px; /* Marge à droite entre les éléments des actions */
+  }
+  
+  .sidebar {
+    width: 20%; /* Largeur de la sidebar */
+    height: 100%; /* Hauteur de la sidebar */
+    background-color: #a39393; /* Couleur de fond du header par défaut */
+    position: fixed; /* Position fixe pour rester à gauche */
+    top: 0; /* Aligner le haut de la sidebar avec le haut de la page */
+    left: 0; /* Aligner la sidebar à gauche de la page */
+    overflow-y: auto; /* Activer le défilement vertical si le contenu dépasse */
+    z-index: 1; /* Assurer que la sidebar est au-dessus du contenu principal */
+    margin-top: 0px; /* Assurer que la sidebar ne chevauche pas le header */
+  }
+  
+  .container {
+    max-width: 100%; /* Réduire la largeur maximale du conteneur pour laisser de la place à la sidebar */
+    margin: 0 auto; /* Centrer le conteneur horizontalement */
+margin-bottom: 899;
+transform: translateY(90px); /* Déplacer le tableau vers le bas de 20 pixels */
+
+  }

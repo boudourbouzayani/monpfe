@@ -1,0 +1,53 @@
+
+
+<p>ajouterrole works!</p>
+
+
+<aside class="sidebar">
+    <ul class="menu">
+      <li><a [routerLink]="['/admin']">Dashboard</a></li>
+      <li><a [routerLink]="['/utilisateuroperation']">Utilisateurs</a></li>
+      <li><a [routerLink]="['/adminconc']">Concessionnaire</a></li>
+      <li><a [routerLink]="['/adminoperation']">Admin</a></li>
+      <li><a [routerLink]="['/ajouterutilisateur']">Ajouter utilisateur</a></li>
+      <li><a [routerLink]="['/consulterrole']">Consulter Role</a></li>
+      <li><a href=""  (Click)="onLogout()" >Deconnexion</a></li>
+      <!-- Ajoutez d'autres liens pour chaque direction  -->
+    </ul>
+  </aside>
+
+
+
+<!-- cet espace est pour modifier un role-->
+<div class="bg-light min-vh-100 d-flex flex-row align-items-center">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-7 col-md-9 col-xl-6">
+    
+        <div class="card mx-4">
+          <div class="card-body p-4">
+            <form #myForm="ngForm" (ngSubmit)="ajouterRole(myForm)">
+              <h1>Ajouter</h1>
+              <p class="text-medium-emphasis">Ajouter un role</p>
+              
+              <div class="mb-3">
+                <label for="labelrole" class="form-label">Label du rôle</label>
+                <input id="labelrole" [(ngModel)]="label" name="labelrole" class="form-control" placeholder="Label du rôle" required>
+              </div>
+             
+            
+              <div class="btn-ajouter">
+                <button type="submit" class="btn btn-success" style="background-color: rgb(189, 163, 163);">Valider</button>
+              </div>
+              
+              <br><br><br><br><br><br>
+            </form>
+          </div>
+        </div> 
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+

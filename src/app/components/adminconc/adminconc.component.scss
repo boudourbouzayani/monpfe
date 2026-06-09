@@ -1,0 +1,164 @@
+/* Style pour la section utilisateur */
+.user-list {
+  margin-left: 270px; /* Ajout de la marge pour tenir compte de la largeur de la barre latérale */
+}
+
+/* Style pour la table des utilisateurs */
+.user-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Style pour chaque cellule du tableau */
+.user-list td {
+  padding: 10px; /* Réduire le padding */
+  font-size: 0.7rem; /* Réduire légèrement la taille de la police */
+}
+
+/* Style pour chaque en-tête de colonne du tableau */
+.user-list th {
+  padding: 6px; /* Conserver le padding pour les en-têtes */
+  font-size: 1rem; /* Conserver la taille de la police pour les en-têtes */
+}
+
+/* Style pour le titre de la liste des utilisateurs */
+.user-list-title {
+  text-align: left; /* Alignement du texte à gauche */
+  margin-bottom: 20px; /* Ajouter un espace en bas du titre */
+  margin-top: 20px; /* Ajouter un espace en haut du titre */
+  font-size: 1.1rem; /* Réduire légèrement la taille de la police */
+}
+
+/* Style pour l'icône de liste */
+.user-list-title i {
+  margin-right: 25px; /* Pour ajouter un espace entre l'icône et le texte */
+  font-size: 1.9rem; /* Réduire légèrement la taille de la police */
+}
+
+.user-list th {
+  background-color: #f2f2f2;
+}
+
+/* Style spécifique pour la colonne des actions */
+.user-list td.actions {
+  width: 220px; /* Largeur de la colonne Actions */
+}
+
+/* Style pour les boutons */
+.buttons-container button {
+  padding: 10px 20px; /* Remplissage des boutons */
+  margin-right: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style pour la barre latérale */
+.sidebar {
+  background-color: #e9e7e7;
+  padding: 10px;
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto; /* Ajout de défilement vertical si le contenu dépasse la hauteur de la barre latérale */
+}
+
+/* Style pour la liste de menu dans la barre latérale */
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  padding: 8px 0;
+}
+
+/* Style pour les boutons dans la barre latérale */
+.menu li a {
+  text-decoration: none;
+  color: #333333;
+  display: block;
+  border-radius: 5px; /* Arrondir les coins des boutons */
+  padding: 8px 12px; /* Ajuster le padding des boutons */
+}
+
+/* Au survol des boutons dans la barre latérale */
+.menu li a:hover {
+  background-color: #9cc6f3; /* Couleur de fond bleue */
+  color: white; /* Couleur du texte en blanc */
+}
+
+/* Style pour les boutons d'action */
+.buttons-container {
+  display: flex; /* Aligner les boutons sur la même ligne */
+}
+
+/* Style pour les boutons */
+.buttons-container button {
+  padding: 8px 10px; /* Réduire légèrement le padding */
+  margin-right: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white; /* Couleur du texte */
+}
+
+/* Style pour les boutons au survol */
+.buttons-container button:hover {
+  opacity: 0.8;
+}
+
+/* Style pour les icônes à l'intérieur des boutons */
+.buttons-container .fas {
+  margin-right: 3px; /* Ajouter un espacement entre l'icône et le texte */
+}
+
+/* Style pour les boutons d'action */
+.buttons-container button {
+  padding: 10px 20px; /* Remplissage des boutons */
+  margin-right: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white; /* Couleur du texte */
+}
+
+/* Style pour les boutons "Modifier" */
+.modify-button {
+  background-color: #6892f3; /* Couleur de fond verte */
+}
+
+/* Style pour les boutons "Supprimer" */
+.delete-button {
+  background-color: #6892f3; /* Couleur de fond rouge */
+}
+
+/* Style pour l'icône de liste */
+.user-list-title i {
+  margin-right: 10px; /* Pour ajouter un espace entre l'icône et le texte */
+  font-size: 1.2rem; /* Réduire légèrement la taille de la police */
+  color: #007bff; /* Couleur bleue */
+}
+
+
+.user-list-title {
+  text-align: left; /* Aligner le titre au centre */
+}
+.user-list {
+  margin-left: 220px; /* Ajuster la marge gauche pour translater le tableau vers la droite */
+}
+
+
+/* Style pour les boutons */
+.buttons-container button {
+  padding: 5px 10px; /* Réduire le padding */
+  margin-right: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white; /* Couleur du texte */
+  font-size: 0.8rem; /* Réduire la taille de la police */
+}

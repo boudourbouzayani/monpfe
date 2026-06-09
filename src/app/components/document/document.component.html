@@ -1,0 +1,6 @@
+<form [formGroup]="uploadForm" (ngSubmit)="onSubmit()">
+    <input type="text" formControlName="typedocument" placeholder="Type de document">
+    <input type="file" (change)="onFileChange($event)">
+    <button type="submit">Envoyer</button>
+  </form>
+  
